@@ -1,0 +1,982 @@
+/*
+
+Style template for lcerpa.org
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: Times New Roman, sans-serif;
+    font-size: 14px;
+    font-size: 0.95vw;
+    line-height: 1.42857143;
+    color: black;
+    height: auto;
+    width: auto;
+    background-color: rgb(204,204,255);
+    overflow-x: hidden;
+}
+
+.topbar {
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    border-bottom: 3px solid purple;
+    background-color: white;
+}
+.navbar{
+    border: none;
+    min-height: 50px;
+}
+.navbar-fixed-top{
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 4px solid black;
+}
+.main-menu-navbar{
+    height: 100px;
+    max-height: 70px;
+    padding: 15px;
+}
+
+.container-fluid{
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.collapse{
+    display: none;
+}
+
+collapse.in{
+    display: block;
+}
+.panel-lcer-menu .list-group{
+    margin: 0px;
+}
+list-group{
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.nav-sidebar [class*=" fa-"] {
+	line-height: inherit;
+}
+.col-xs-2{
+    float: left;
+    position: relative;
+    min-height: 10px;
+    padding-right: 15px;
+    padding-left: 30px;
+}
+.col-xs-10{
+    position: fixed;
+    width: 80.3333333%;
+    min-height: 1px;
+    padding: 30px;
+    padding-left: 75px;
+}
+.col-sm-3{
+    width: 16%;
+    float: left;
+    min-height: 1px;
+}
+
+.small_intro{
+    font: 85%;
+}
+
+.small_intro p{
+    background-color: rgba(0,0,0,0.57);
+    display: block;
+    padding: 10px;
+    color: white;
+}
+@media (min-width:768px) {
+    .sidebar{
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: url(/DESIGNS/sidebar_bg.png)
+    }
+}
+
+.panel-group{
+    margin-bottom: 20px;
+}
+.panel-group .panel{
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.panel panel-lcer-menu{
+    height:100%;
+    width: 203px;
+    position: fixed;
+    z-index: 1;
+    top: 105px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .panel panel-lcer-menu {padding-top: 5px;}
+    .panel panel-lcer-menu a {font-size: 5px;}
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 90px;
+    background: url(DESIGNS/sidebar_bg.png);
+
+ }
+
+.default-tab{
+    padding: 6px 1px 8px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-size: 1.2vw;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*
+.default-tab:hover{
+    background-color: #330072;
+}
+*/
+
+/*
+.default-tab:active{
+    background-color: rgb(204,204,255);
+    color: #330066;
+}
+*/
+.default-tab:target{
+    background-color: rgb(204,204,255);
+    color: #330066;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 1px 8px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-size: 1.2vw;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/* On mouse-over */
+.sidenav, .dropdown-btn:hover {
+    color: #f1f1f1;
+    background-color: #330072;
+}
+
+.dropdown-btn-ne {
+    margin-top: 20px;
+    padding: 6px 1px 8px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-size: 1.2vw;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 99.3%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: #330072;
+}
+
+.dropdown-btn-ne:hover {
+    color: rgb(253, 176, 30);
+    background-color: #330072;
+}
+
+
+/*Only for the home page*/
+.tabcontent .column2_1_home { 
+  background-color: #330072;
+  margin-top: 100px;
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/*Setting for every other page*/
+.tabcontent .column2_1 {
+/*
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;  required       
+*/
+  background-color: #330072;
+  margin-top: 100px;
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 220px; /* Should be removed. Only for demonstration */
+}
+
+.tabcontent .column2_news {
+    
+  background-color: rgb(204,204,255);
+  margin-top: 100px;
+  float: left;
+  width: 70%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+
+.tabcontent .column2_director{
+  background-color: #330072;
+  margin-top: 100px;
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 320px;
+}
+
+.tabcontent .column2_members{
+  background-color: rgb(204,204,255);
+  margin-top: 100px;
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 320px;     
+}
+
+.tabcontent .members_heading h3{
+/*    font-size: 25px;*/
+    font-size: 1.75vw;
+}
+
+.tabcontent .members_heading p{
+    font-size: 1.2vw;
+    line-height: 2.0;    
+}
+
+.tabcontent .members_heading a:link{
+    color: black;
+}
+
+.tabcontent .members_heading a:visited{
+    color: black;
+}
+
+.tabcontent .members_heading a:hover{
+    color: #330072;
+}
+
+.tabcontent .members_heading ul li{
+    margin: 10px;
+    font-size: 1.23vw;
+}
+
+.tabcontent .members_heading ul li:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(DESIGNS/laurier_leaf.png);
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+   transform: rotate(320deg);    
+}
+
+.tabcontent .director_heading h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0px;
+    font-size: 1.5vw;
+    padding-left: 10px;
+}
+
+.tabcontent .director_headshot{
+    float: left;
+    margin: 30px;  
+    padding-top: 13px;
+}
+
+.tabcontent .director_heading p{
+    color: white;
+    font-size: 20px;
+    font-size: 1.5vw;
+    position: static;
+    text-align: justify;
+    padding: 15px;
+    padding-top: 0px
+}
+
+.tabcontent .director_heading a:link{
+   color: white;
+}
+
+.tabcontent .director_heading a:visited{
+    color: white;
+}
+    
+.tabcontent .director_heading a:hover{
+    color: gold;
+}
+
+
+.column2_2 {
+    display:flex;
+    flex-grow: 100;
+    width: auto;
+    height: 100%;
+    margin-top: 100px;
+    position: fixed;
+    right: 0;
+    background-color: rgb(36,41,45);
+}
+
+.tabcontent .row2-space {
+    background-color: rgb(204,204,255);
+    height: 100%;
+    width: 100.5%;
+    display: flex;
+}
+
+.tabcontent .poster{
+    float: left;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.register{
+    margin-left: 30px;
+    border: 4px solid #330072;
+    padding: 14px 40px;
+    background-color: rgb(204,204,255);
+    color: black;
+    font-size: 14px;
+    font-size: 0.95vw;
+
+} 
+
+.register:hover{
+    background-color: #330072;
+    color: white;
+}
+
+.tabcontent .poster_description{
+    font-size: 15px;
+    font-size: 0.99vw;
+    
+}
+
+.tabcontent .more_info{
+    font-size: 12px;
+    font-size: 0.85vw;
+
+}
+
+.tabcontent .background_drop_color{
+    background-color: rgba(0,0,0,0.3);
+    height: 320px;
+    padding-top: 1px;
+    padding-bottom: 100%;
+    margin-right: 6px;
+}
+.tabcontent .poster_prev{
+    text-align: center;
+    height: 550px;
+    width: 380px;
+}
+
+.tabcontent .poster_description_prev{
+    font-size: 15px;
+    font-size: 0.99vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.tabcontent .more_info_prev{
+    font-size: 12px;
+    font-size: 0.85vw;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+
+
+.tabcontent .about_us ul{
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.tabcontent .about_us ul li{
+    position: relative;
+    padding-left: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    font-size: 1.35vw;
+}
+
+.tabcontent .about_us ul li:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(DESIGNS/laurier_leaf.png);
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+   transform: rotate(320deg);    
+}
+.tabncontent .about_us p{
+    font-size: 23px;
+    color: black;
+    text-align: justify;
+}
+
+.tabcontent .about_us h3 {
+    color: #330066;
+    font-size: 25px;
+    font-size: 1.5vw;
+    padding-left: 10px;
+}
+
+.tabcontent .about_links a:link{
+    color: black;
+}
+
+.tabcontent .about_links a: visited{
+    color: black;
+}
+
+.tabcontent .about_us a:hover {
+    color: #330066;
+}
+
+.tabcontent .about_us p {
+    font-size: 20px;
+    font-size: 1.35vw;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.tabcontent .about_us img{
+   height: 30px;
+   width: 30px;
+   padding-right: 10px;
+   transform: rotate(320deg);
+}
+
+.tabcontent .about_us button{
+    border: none;
+    outline: none;
+    background-color: rgb(204,204,255);
+    font-size: 18.5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tabcontent .media_heading h3{
+    color: white;
+    font-size: 1.5vw;
+    margin: 20px;
+    margin-bottom: 15px;
+
+}
+
+.tabcontent .media_heading p {
+    color: white;
+    font-size:1.5vw;
+    text-align: justify;
+    margin: 20px;
+    margin-top: 0px;
+    border: 5px solid white;
+    padding: 20px; 
+    border-left-color: rgb(253, 176, 30);
+    border-right-color: rgb(253, 176, 30);
+}
+
+.tabcontent .legend_object{
+    display: flex;
+    background-color: #330072;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 104px;
+    width: 101.5%;
+    margin-left: -10px;
+    margin-top: 5px; 
+    
+}
+
+.tabcontent .icon_legend_row{
+    float: left;
+    justify-content: flex-start;
+    
+}
+
+.tabcontent .social_icons{
+    float: left;
+    display: flex;
+    filter: invert(100%);
+    margin-right: 5px;
+    padding-left: 15px;
+}
+
+.tabcontent .media_heading .legend_info{
+    color: white;
+    margin: 0px;
+    display: flex;
+    padding-top: 4px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.tabcontent .media_contact h2{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 20px;  
+    margin-bottom: 10px;
+}
+
+.icon_group{
+    display: flex;
+    padding-right: 60px;
+    border-left: 5px solid;
+    border-left-color: rgb(253, 176, 30);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.contact_info a:link{
+   color: #330066;     
+}
+
+.contact_info .media_news{
+    color: #330066;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.contact_info a:visited{
+    color: #330066;
+}
+
+.contact_info a:hover{
+    color: black;
+}
+.contact_info{
+    color: #330066;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    font-size:18px;
+}
+.group_row{
+    float:left;
+    justify-content: flex-start;
+}
+.social_icons2{
+    float:left;
+    display:flex;
+    margin-right:5px;
+    padding-left: 30px;
+}
+
+/* Clear floats after the columns */
+/*
+.row2-space:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+ }
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626; 
+    background-color: #330066;
+    padding-left: 8px;
+    
+}
+.dropdown-container button {
+    display: block;
+    border: none;
+    background-color: #330066;
+    color: white;
+    padding: 10px 0px 20px 26px;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-container button:hover {
+    background-color: rgb(253, 176, 30);
+    color: black;
+}
+
+.dropdown-container button:{
+    background-color: rgb(253, 176, 30);
+    color: black;
+}
+
+.dropdown-container button:target;
+
+.dropdown-container-ne {
+    display: none;
+    padding-left: 8px;
+}
+.dropdown-container-ne button {
+    margin-left: 30px;
+    border: 4px solid #330072;
+    padding: 14px 40px;
+    background-color: rgb(204,204,255);
+    font-size: 14px;
+    font-size: 0.95vw;
+}
+
+.dropdown-container-ne button:hover {
+    background-color: rgb(253, 176, 30);
+    color: black;
+}
+
+.dropdown-container-ne button:{
+    background-color: rgb(253, 176, 30);
+    color: black;
+}
+
+.dropdown-container-ne button:target;
+
+/* Optional: Style the caret down icon */
+.fa fa-caret-down {
+    
+    float: right;
+    padding-right: 8px;
+    position: static;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.
+.panel-lcer-menu{
+    background: transparent;
+    margin: 0px -20px;
+    border: none;
+}
+.panel {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+}
+
+.panel-lcer-menu a:hover, .panel-lcer-menu a.active{
+    background-color: rgb(51,15,120);
+    text-decoration: none;
+}
+
+.panel-lcer-menu a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.topbar-header-text p{
+    padding: 0px 30px;
+    margin: 0px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    font-weight:300;
+    color: black;
+}
+p{
+    display: block;
+    margin-block-start:1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+div{
+    display: block;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.side-nav {
+	border: none;
+	min-height: 40px;
+}
+.panel-lcer-menu {
+	background: transparent;
+	margin: 0px -20px;
+	border: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.home_page{
+    display: flex;
+    flex-direction: column;
+}
+
+.home_page .hp_column{
+    margin:10px;
+    position: static;
+    text-align:justify; 
+    float:left;
+    padding: 0 14px;
+}
+
+.hp_column h2{
+    font-size: 30px;
+    font-family: Times New Roman, sans-serif;
+    color: #330072;
+
+}
+.hp_column p{
+    font-size: 19px;
+}
+.hp_ne_column{
+  display: flex;
+  flex-direction: row;  
+}
+.hp_ne_column p{
+    width: 50%;
+}
+
+.tabcontent {
+    margin-left: 200px;
+    display: flex;
+}
+
+.news_heading h3{
+    font-size: 25px;
+    font-family: Times New Roman, sans-serif;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.5vw;
+    padding-left: 10px;
+}
+
+.news_heading p{
+    margin-top: 0px;
+    color: black;
+    font-size: 18px;
+    font-size: 1.0vw;
+    line-height: 1.5em;
+    
+}
+
+.research_heading h3{
+    font-size: 25px;
+    font-family: Times New Roman, sans-serif;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
+
+.research_heading p{
+    margin-top: 0px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.paper_links{
+    background-color: #330072;  
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 9.5px;
+    font-size: 17px;
+	font-family: 'Times New Roman', sans-serif;
+    width: 9%;
+}
+
+.paper_links:hover{
+    background-color: #3e008c;
+}
+
+.paper_tabcontent{
+    color: black;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+    animation: fadein .5s;
+}
+
+.paper_tabcontent h3{
+    color: black;
+    font-size: 25px;
+    animation: fadein .5s;
+    font-size: 1.5vw;
+}
+
+.paper_tabcontent p{
+    color: black;
+    text-indent: 1px;
+    font-size: 17px;
+    animation: fadein .5s;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.paper_tabcontent a{
+    color: black;
+    animation: fadein .5s;
+}
+
+.paper_tabcontent a:visited{
+    color: black;
+}
+
+.paper_tabcontent a:hover{
+    color: #3e008c;
+}
+
+.paper_tabcontent p img{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+    transform: rotate(320deg);
+}
+
+td{
+    font-size: 14px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Menu */
+#menu a {
+
+	display: block;
+
+	float: left;
+
+	padding: 0px 20px 0px 20px;
+
+	border-right: 1px solid #330066;
+
+	text-decoration: none;
+
+	text-align: center;
+
+	text-transform: capitalize;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	color: #000000;
+
+}
+
+/* Page */
+.main{
+	width: 1000px;
+    background-color:#F0F2F3;
+	margin: 0 auto;
+	padding: 120px 0px 0px 70px;
+
+}
+
+
+.topbar-header-text p{
+/*    display: inline-block;*/
+	padding: 0px 75px;
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 1.25em;
+	font-weight: 300;
+	color: #333;
+    margin-left: 100px;
+}
+.topbar {
+/* 	background-color: #8A2A43; */
+    top: 0;
+    width: 100%;
+	max-height: 100px;
+}
