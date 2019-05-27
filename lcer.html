@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LCER</title>
+<meta name="keywords" content="Economics">
+<meta name="description" content="Laurier Centre for Economic Research">
+<link href="_css/lcerstyle.css" rel="stylesheet" type="text/css">
+<link href="lcerstyle.css" rel="stylesheet" type="text/css" media="screen">
+<link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/** {box-sizing:border-box}*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+    
+.prev {
+    left: -4px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  bottom: 5px;
+  border: 2px solid white;
+  width: 100%;
+}
+
+.heading{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: 0.8;
+    top: 250px;
+    left: 630px;
+    width: 150px;
+}
+    
+.highlight{
+    top: 0px;
+    font-size: 20px;
+    text-transform: uppercase;  
+    position: absolute;
+    margin: 15px;
+}
+
+.context{
+    position: absolute;
+    left: 170px;
+    top: 90px;
+    text-align: justify;
+    padding-right: 40px;
+    font-size: 17px;
+}
+
+.headshot{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+}
+.context_2{
+    position: absolute;
+    left: 170px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.highlight a:link{
+   color: white;
+}
+
+.highlight a:visited{
+    color: white;
+}
+    
+.highlight a:hover{
+    color: gold;
+}
+.context_2 a:link{
+    color: white;
+}
+.context_2 a:visited{
+    color: white;
+}
+    
+.context_2 a:hover{
+    color: gold;
+}
+    
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #330072;    
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.image {
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+</style>
+</head>
+<body> 
+    <div class="navbar navbar-default navbar-fixed-top topbar" role="navigation">
+        <div class="container-fluid main-menu-navbar">
+            <div class="row">
+                <div class="col-xs-2 hidden-xs">
+                    <a href="lcer.html">
+                         <img src="DESIGNS/LCER_logo.png" width="170" height="100" class="main-logo"/>
+                    </a>
+                </div>
+                <div class="col-xs-10 hidden-xs topbar-header-text">
+                    <p>Lazaridis School of Business and Economics</p>
+                    <p><strong>Laurier's Centre for Economic Research</strong></p>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+    <div class="sidenav">
+        <div class="small_intro">
+            <p>The Economics Department at WLU includes experts in macroeconomics, education, health, policy and more. Find out more about our WLU members at www.wlu.ca/economics</p>
+        </div>
+        <button class="default-tab" onclick="openTab(event,'HOME')" id="defaultOpen">HOME 
+<!--            <i class="fa fa-caret-down"></i>-->
+        </button>
+        <button class="dropdown-btn">NEWS &amp; EVENTS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <button class="tablinks" onclick= "openTab(event, 'Economic Outlook')"  href="#">Economic Outlook</button>
+            <button class="tablinks" onclick= "openTab(event, 'Economist-in-Residence')"  href="#">Economist-in-Residence</button>
+            <button class="tablinks" onclick= "openTab(event, 'Other News')"  href="#">Other News</button>
+        </div>
+        <button class="dropdown-btn">RESEARCH 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <button class="tablinks" onclick= "openTab(event, 'Published Papers')"  href="#">Published Papers</button>
+            <button class="tablinks" onclick= "openTab(event, 'Working Papers')"  href="#">Working Papers</button>
+            <button class="tablinks" onclick= "openTab(event, 'Commentaries')"  href="#">Commentaries</button>
+            <button class="tablinks" onclick= "openTab(event, 'Undergraduate')"  href="#">Undergraduate</button>
+        </div>
+        <button class="dropdown-btn">CONTACT 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <button class="tablinks" onclick= "openTab(event, 'Director')"  href="#">Director</button>
+            <button class="tablinks" onclick= "openTab(event, 'Media')"  href="#">Media</button>
+            <button class="tablinks" onclick= "openTab(event, 'For Members')"  href="#">For Members</button>
+        </div>
+    </div>
+    
+<div id="HOME" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_1_home">
+            <div  class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img class="image" src="DESIGNS/WLU_Laz.jpg" width="925" height="300">
+                    <div class="text">
+<!--      <h1 class="heading">Highlights</h1>-->
+                        <h1 class="highlight"><a href="https://www.wlu.ca/faculty-profiles/sbe/tracy-snoddon.html">Tracy Snoddon </a> - CARBON COPIES: THE PROSPECTS FOR AN ECONOMY-WIDE CARBON PRICE IN CANADA</h1>
+                        <img class="headshot" src="DESIGNS/snoddon-headshot.jpg" height="160">
+                        <p class="context"> In this C.D. Howe Institute report, Laurier's Tracy Snoddon argues that Ottawa should rebate revenues from its carbon pricing backstop directly to citizens in non-compliant provinces that reject its plan. </p>
+                        <p class="context_2">Read the report <a href="https://cdhowe.org/public-policy-research/carbon-copies-prospects-economy-wide-carbon-price-canada">Carbon Copies</a></p>
+
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="image" src="DESIGNS/WLU_Laz_2.png" width="925" height="300">
+                  <div class="text">
+                <!--      <h1 class="heading">Highlights</h1>-->
+                      <h1 class="highlight"><a href="https://sites.google.com/site/justinsmithecon/home">Justin Smith</a> - DIVERSITY AND DONATIONS </h1>
+                      <img class="headshot" src="DESIGNS/Smith-headshot.jpg" height="160">
+                      <p class="context"> Smith's research (with coauthors Andreoni, Payne and Karp) has found that an increase in ethnic diversity decreases private donations to charity in Canada. They explore this relationship and find it driven by non-minorities and blacks - who tend to donate more when their group share in a community increases.    </p>
+                      <p class="context_2">Read the report <a href="https://cdhowe.org/public-policy-research/carbon-copies-prospects-economy-wide-carbon-price-canada">Carbon Copies</a></p>
+
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="image" src="DESIGNS/WLU_Laz_3.jpg" width="925" height="300">
+                  <div class="text"><h1 class="highlight">Caption Three</h1></div>
+                </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+      
+<div class="home_page"> 
+        <div class="hp_column fade">
+            <h2><span>Welcome to Laurier's Centre for Economic Research</span></h2>
+            <p>The Laurier's Centre for Economic Research is an association of economists, based at the Lazaridis School of Business and Economics. LCER aims to support and promote high quality economic research. Follow the links to find our more about our members, our research, and our activities.</p>
+        </div>
+        <div class="hp_column fade">
+            <h2><span>News &amp; Events</span></h2>
+            <div class="hp_ne_column">
+            <p></p>
+            <p>blah blah blah blah</p>
+            </div>
+
+        </div>
+</div>
+</div> 
+<!--Home content ends-->
+<div class="column2_2">
+<a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</div> <!--HOME ends-->
+    
+<!--NEWS & EVENTS TAB-->
+    
+<div id="Economic Outlook" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_news">
+            <div class = "news_heading">
+                <h3>2019 REGISTRATION </h3>
+                <img class = "poster" src="DESIGNS/Economic_Outlook_2019.jpg" width = "600" height ="300">
+                <p class = "poster_description">Luncheon with keynote speaker Craig Alexander (Partner and Chief Economist, Deloitte Canada) will be held in Lazaridis Hall at WLU on February 20, 2019, from 11:30-1:00. We anticipate a thought provoking and engaging presentation, clearly important for stakeholders in our region.</p>
+                <p class= "more_info">For more information, including sponsorship opportunities, please contact the LCERPA director by emailing <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a></p>
+                <form action="https://www.eventbrite.ca/e/economic-outlook-2019-canadas-competitiveness-challenge-tickets-53597660044" method="get" target="_blank">
+                    <button class = "register" type="submit">Register Now</button>
+                </form>
+            </div>
+            <button class="dropdown-btn-ne">Previous EO Events 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container-ne">
+                <div class="background_drop_color">
+                <div class="prev_EO">
+                <p class = "poster_description_prev"> Join us Thursday November 9, 2018 for Economic Outlook 2018. Our panel features keynote speaker Beata Caranci (TD Bank), preceded by a reception and the poster session Waterloo Region in Perspective. </p>
+                <img class = "poster_prev" src="DESIGNS/Economic-Outlook-2018.jpg" width = "600" height ="300">
+                <p class = "poster_description_prev">Luncheon with keynote speaker Craig Alexander (Partner and Chief Economist, Deloitte Canada) will be held in Lazaridis Hall at WLU on February 20, 2019, from 11:30-1:00. We anticipate a thought provoking and engaging presentation, clearly important for stakeholders in our region.</p>
+                <p class= "more_info_prev">For more information, including sponsorship opportunities, please contact the LCERPA director by emailing <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a></p>
+                </div>
+                <br>    
+                <div class="prev_EO">
+                <p class = "poster_description_prev"> Join us Thursday November 9, 2018 for Economic Outlook 2018. Our panel features keynote speaker Beata Caranci (TD Bank), preceded by a reception and the poster session Waterloo Region in Perspective.  </p>
+                <img class = "poster_prev" src="DESIGNS/Economic_Outlook_2019.jpg" width = "600" height ="300">
+                <p class = "poster_description_prev">Luncheon with keynote speaker Craig Alexander (Partner and Chief Economist, Deloitte Canada) will be held in Lazaridis Hall at WLU on February 20, 2019, from 11:30-1:00. We anticipate a thought provoking and engaging presentation, clearly important for stakeholders in our region.</p>
+                <p class= "more_info_prev">For more information, including sponsorship opportunities, please contact the LCERPA director by emailing <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>    
+</div> <!--Economic Outlook ends-->
+    
+<div id="Economist-in-Residence" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_1">
+            <div class = "research_heading">
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>    
+</div> <!--Economist-in-Residence ends-->
+    
+<div id="Other News" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_1">
+            <div class = "research_heading">
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>  
+</div> <!--Other News ends-->
+    
+<!--RESEACH TAB-->
+    
+<div id="Published Papers" class="tabcontent" >
+    <div class="row2-space">
+        <div class="column2_1">
+            <div class = "research_heading">
+                <h3>Published Papers</h3>
+                <p>LCERPA members offer expertise in a wide range of fields. On this page we provide information on our members' recent research and publications, including papers published as part of the LCERPA Working Paper Series.
+                <br><br> PUBLISHED AND FOURTHCOMING PAPERS:</p>
+                <button class ="paper_links" onclick ="openPage('Current', this, 'rgb(204,204,255)')" id ="defaultOpen">Current</button>
+                <button class ="paper_links" onclick ="openPage('2018', this, 'rgb(204,204,255)')">2018</button>
+                <button class ="paper_links" onclick ="openPage('2017', this, 'rgb(204,204,255)')">2017</button>
+                <button class ="paper_links" onclick ="openPage('2016', this, 'rgb(204,204,255)')">2016</button>
+                <button class ="paper_links" onclick ="openPage('2015', this, 'rgb(204,204,255)')">2015</button>
+                <button class ="paper_links" onclick ="openPage('2014', this, 'rgb(204,204,255)')">2014</button>
+        
+                <div id="Current" class="paper_tabcontent">
+                    <h3>JOURNAL ARTICLES (2019)</h3>	
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. Forthcoming. <a href="https://www.journals.uchicago.edu/toc/jole/current" target="_blank">Push and Pull: Disability Insurance, Regional Labor Markets, and Benefit Generosity in Canada and the United States.</a> Journal of Labor Economics, July 2019.
+					</p>
+                    
+                    <h3>BOOK CHAPTERS, BOOKS, AND OTHER PUBLICATIONS(2019)</h3>
+                    <p>None listed below.</p>
+                </div>
+                 <div id="2018" class="paper_tabcontent">
+                    <h3>JOURNAL ARTICLES (2018)</h3>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Benjamin, Dwayne, Loren Brandt, Nguyen Le Hoa, and Brian McCaig. Forthcoming. <a href="https://link.springer.com/article/10.1007/s11150-017-9390-0" target="_blank">Program participation in a targeted land distribution program and household outcomes: evidence from Vietnam</a> Review of Economics of the Household. 
+					</p>
+				
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lombardi, D., P. Siklos, and S. St.Amand.  <a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1465-7287" target="_blank">"Government Bond Yields at the Effective Lower Bound: International Evidence"</a> Contemporary Economic Policy.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lombardi, D., P. Siklos, and S. St.Amand.  <a href="" target="_blank">"A Survey of the International Evidence and Lessons Learned About Unconventional Monetary Policies: 
+						Is a ‘New Normal’ in our Future?"</a> International Journal of Central Banking.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lombardi, D., P. Siklos, and X.Xie.  Forthcoming. <a href="" target="_blank">"Monetary Policy Transmission in Systemically Important Economies and China’s Impact"</a> Journal of Asian Economics.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B. and J. Nanowski. Forthcoming. <a href="https://www.tandfonline.com/doi/full/10.1080/00220388.2018.1475646" target="_blank">Business Formalisation in Vietnam</a> Journal of Development Studies, DOI: 10.1080/00220388.2018.1475646					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B. and N. Pavcnik. Forthcoming. <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20141096&&from=f" target="_blank">Export markets and labor allocation in a low-income country.</a> American Economic Review.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. 2018.  <a href="https://www.utpjournals.press/loi/cpp" target="_blank">"Health capacity to work of older Canadians: gender and regional dimensions."</a> Canadian Public Policy, June 2018 44(2): 159-172.
+					</p>
+                    
+                    <h3>BOOK CHAPTERS, BOOKS, AND OTHER PUBLICATIONS(2018)</h3>
+                    
+                    <p><img src="DESIGNS/laurier_leaf.png"> Chong, T, Wang, D, and W. Chan. Forthcoming <a href="http://www.worldscientific.com/series/aqafa" target="_blank">Do Price Limits Increases Stock Market Volatility in China?</a> Advances in Quantitative Analysis of Finance and Accounting.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. Forthcoming. <a href="http://papers.nber.org/booksbyseries/ISS.html" target="_blank">The labour force participation of older men in Canada</a> In Social Security Programs Around the World: Working Longer. Courtney Coile, Kevin Milligan and David A. Wise (eds.) NBER Book Series. University of Chicago Press.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png">Schirle, T. and M. Veall. 2018. <a href="https://www.clsa-elcv.ca/doc/2639" target="_blank">Retirement in the Canadian Longitudinal Study on Aging</a>  in P. Raina, C. Wolfson, S. Kirkland, and  L. Griffith (eds.), 
+					The Canadian Longitudinal Study on Aging (CLSA) Report on Health and Aging in Canada: Findings from Baseline Data Collection 2010-2015. Canadian Longitudinal Study on Aging. 
+					</p>
+                    
+                    
+                </div>
+                <div id="2017" class="paper_tabcontent">
+                    <h3>JOURNAL ARTICLES (2017)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> Bakas, D. ,  T. Panagiotidis and G. Pelloni. 2017. <a href="http://onlinelibrary.wiley.com/doi/10.1111/ecin.12363/abstract?campaign=woletoc" target="_blank">Regional and sectoral evidence of the macroeconomic effects of labor reallocation:  A panel data analysis.</a> Economic Inquiry 55(1): 501-526.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png">  Benjamin, Dwayne, Loren Brandt, and Brian McCaig. 2017. <a href="https://link.springer.com/article/10.1007/s10888-016-9341-7" target="_blank">“Growth with equity: Income inequality in Vietnam,”</a> Journal of Economic Inequality, 15(1), 25-46.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Chong, T., S. C. Tsui, and W. H. Chan. Forthcoming 2017. <a href="http://www.tandfonline.com/toc/rquf20/current" target="_blank">“Factor Pricing in Commodity Futures and the Role of Liquidity"</a> Quantitative Finance
+					</p>
+		
+					<p><img src="DESIGNS/laurier_leaf.png">  Fung, J., Webb, R. I., and W. H. Chan. Forthcoming 2017. <a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)2041-6156" target="_blank">“Do Derivative Markets Contain Useful Information for Signaling “Hot Money” Flows? ”</a> Asia-Pacific Journal of Financial Studies.
+					</p>
+		
+					<p><img src="DESIGNS/laurier_leaf.png"> Legree, S., T. Schirle and M. Skuterud. 2017.  <a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-2338" target="_blank">"The Effect of Labor Relations Laws on Unionization Rates within the Labor Force: Evidence from the Canadian Provinces"</a> Industrial Relations: A Journal of Economy and Society, 56(4): 605-639.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and Y. Tobol. 2017. <a href="http://link.springer.com/article/10.1007/s10683-016-9479-y?no-access=true" target="_blank">"Clever enough to tell the truth," </a> Experimental Economics, 20:1, 130-155. DOI:10.1007/s10683-016-9479-y.
+					</p>
+                    
+                    <h3>BOOK CHAPTERS, BOOKS, AND OTHER PUBLICATIONS(2017)</h3>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B. and N. Pavcik. 2017.  <a href="https://www.ifpri.org/publication/moving-out-agriculture-structural-change-viet-nam" target="_blank">Moving out of agriculture: Structural change in Vietnam</a> In "Structural change, fundamentals, and growth: A framework and case studies," (Eds.) Margaret McMillan, Dani Rodrik, and Claudia Paz Sepulveda. Washington, D.C.: International Food Policy Research Institute. 2017.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B., M. McMillan, I. Verduzco, and K. Jefferis. 2017. <a href="https://www.ifpri.org/publication/stuck-middle-structural-change-and-productivity-growth-botswana" target="_blank">Stuck in the middle? Structural change and productivity growth in Botswana,</a> In Structural change, fundamentals, and growth: A framework and case studies, (Eds.) Margaret McMillan, Dani Rodrik, and Claudia Paz Sepulveda. Washington, D.C.: International Food Policy Research Institute.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. 2017.  <a href="http://papers.nber.org/books/wise-22" target="_blank">Health Capacity to Work at Older Ages: Evidence from Canada</a> Social Security Programs and Retirement Around the World: The Capacity to Work at Older Ages.  NBER Book Series. University of Chicago Press.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Schirle, T. 2017 <a href="https://www.ctf.ca/ctfweb/EN/publications/product_detail.aspx?prod=100YEARS&cat=Books" target="_blank">Gender equity and the income tax system</a> in Income Tax at 100 Years: Essays and Reflections on the Income War Tax Act, Jinyan Li, J. Scott Wilkie and Larry F. Chapman, eds., Canadian Tax Foundation.
+					</p>
+                    
+                    
+                </div>
+                <div id="2016" class="paper_tabcontent">
+                    <h3>JOURNAL ARTICLES (2016)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> Andreonia, J.A.,  A. Payne, J. Smith, and D. Karp. 2016. <a href="http://www.sciencedirect.com/science/article/pii/S0167268116300890" target="_blank">Diversity and donations: The effect of religious and ethnic diversity on charitable giving</a> Journal of Economic Behavior & Organization 128 (August): 47-58.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bakas, D. ,  T. Panagiotidis and G. Pelloni. 2017. <a href="http://onlinelibrary.wiley.com/doi/10.1111/ecin.12363/abstract?campaign=woletoc" target="_blank">Regional and sectoral evidence of the macroeconomic effects of labor reallocation:  A panel data analysis.</a> Economic Inquiry 55(1): 501-526.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bohl, M., A. Klein, and P. Siklos. 2016. <a href="http://ejournals.duncker-humblot.de/doi/abs/10.3790/ccm.49.2.193?journalCode=ccm" target="_blank">A Markov Switching Approach to Herding.</a> Credit and Capital Markets, Vol. 49, No. 2, 193-220.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bohl, M.,  P. Michaelis, and P. Siklos. 2016.<a href="http://www.sciencedirect.com/science/article/pii/S026499931500382X" target="_blank">Austerity and Recovery: Exchange Rate Regime Choice, Economic Growth and Financial Crises</a> Economic Modelling 53 (February 2016): 195-207.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Boeringer, C.,  N. Rivers, T. Rutherford, and R. Wigle. 2015. <a href="http://onlinelibrary.wiley.com/doi/10.1111/caje.12152/abstract" target="_blank">"Sharing the burden for climate change mitigation in the Canadian federation."</a> Canadian Journal of Economics, November, Vol. 48(44), 1350-1380.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bordo, M. and P. Siklos. 2016. <a href="http://www.sciencedirect.com/science/article/pii/S1572308916300924​" target="_blank">Central Bank Credibility Before and After the Crisis</a> Open Economies Review, August 2016.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Chong, T., Q. He, and W. H. Chan. 2016. <a href="http://www.tandfonline.com/toc/RIEJ20/current" target="_blank">From Fixed to Float: A Competing Risks Analysis</a> International Economic Journal.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Claus, E., I. Claus and L. Krippner. 2016. <a href="http://www.mitpressjournals.org/toc/asep/15/3" target="_blank">"Monetary policy spillovers across the Pacific when interest rates are at the zero lower bound"</a> Asian Economic Papers 15(3): 1-27.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Filardo, A. and P. Siklos. 2016. <a href="http://www.tandfonline.com/doi/full/10.1080/1540496X.2014.998562" target="_blank">Prolonged Reserves Accumulation, Credit Booms, Asset Prices and Monetary Policy in Asia</a> Emerging Markets Trade and Finance 52 (February 2016): 364-381.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Koebel, K. and T. Schirle. 2016. <a href="https://economics.ca/cpp/en/forthcoming.php">"The differential impact of universal child benefits on the labour supply of married and single mothers"</a> Canadian Public Policy, March 2016.
+					</p>
+					
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Legree, S., T. Schirle and M. Skuterud. (Forthcoming)  <a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-2338" target="_blank">"The Effect of Labor Relations Laws on Unionization Rates within the Labor Force: Evidence from the Canadian Provinces"</a> Industrial Relations.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lombardi, D. and P. Siklos. 2016. <a href="http://www.sciencedirect.com/science/article/pii/S1572308916300924" target="_blank">Benchmarking Macroprudential Polcies: An Initial Assessment</a> Journal of Financial Stability, December 2016.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Morrison, W.G.  2016.  <a href="http://www.tandfonline.com/doi/full/10.1080/00220485.2015.1106360" target="_blank">Product Bundling and Shared Information Goods: A Pricing Exercise</a> Journal of Economic Education, 47(1), 49-63.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Morrison W. G. and Mason K. 2016. <a href="http://www.sciencedirect.com/science/article/pii/S2210539516301043" target="_blank">Low cost carriers in the Middle East and North Africa: Prospects and strategies</a> Research in Transportation Business & Management.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Pang, K. and P. Siklos. 2016. <a href="http://www.sciencedirect.com/science/journal/02615606" target="_blank">Macroeconomic Consequences of the Real-Financial Nexus: Imbalances and Spillovers between China and the U.S.</a> Journal of International Money and Finance, 65: 195-212.
+					</p>
+					
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and Y. Tobol. 2017. <a href="http://link.springer.com/article/10.1007/s10683-016-9479-y?no-access=true" target="_blank">"Clever enough to tell the truth," </a> Experimental Economics, (online March 2016) DOI:10.1007/s10683-016-9479-y.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and O. Volij. 2016. <a href="http://link.springer.com/article/10.1007/s00182-015-0493-7" target="_blank">First-mover advantage in best-of series: an experimental comparison of role-assignment rules.</a> International Journal of Game Theory, DOI: 10.1007/s00182-015-0493-7.
+					</p>
+                    
+                    <h3>BOOK CHAPTERS, BOOKS, AND OTHER PUBLICATIONS(2016)</h3>
+                    
+                    <p><img src="DESIGNS/laurier_leaf.png"> Chong, T, Wang, D, and W. Chan. Forthcoming <a href="http://www.worldscientific.com/series/aqafa" target="_blank">Do Price Limits Increases Stock Market Volatility in China?</a> Advances in Quantitative Analysis of Finance and Accounting.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Claus, E. and I. Claus. (eds.)  2016. A collection of surveys on savings and wealth accumulation. United Kingdom: John Wiley & Sons Limited.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Legree, S., T. Schirle, and M. Skuterud. 2016. <a href="http://irpp.org/research/income-inequality-the-canadian-story/" target="_blank">Can Labour Relations Reform Reduce Wage Inequality?</a> in Income Inequality: The Canadian Story, edited by David A. Green, W. Craig Riddell and France St-Hilaire, 399-434.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B. and N. Pavcik. Forthcoming.  <a href="http://www.nber.org/papers/w19616" target="_blank">Moving out of agriculture: Structural change in Vietnam</a> in Structural change, fundamentals, and growth, eds. Margaret McMillan and Claudia Paz Sepulveda.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B., M. McMillan, I. Verduzco, and K. Jefferis. Forthcoming. Stuck in the middle? Structural change and productivity growth in Botswana, in Structural change, fundamentals, and growth, eds. Margaret McMillan and Claudia Paz Sepulveda.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. 2016. <a href="https://cdhowe.org/public-policy-research/pressing-question-does-cpp-expansion-help-low-earners" target="_blank">The Pressing Question: Does CPP Expansion Help Low Earners?</a> C.D. Howe Institute E-Brief, July 2016.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. 2016.  <a href="http://papers.nber.org/books/wise14-1" target="_blank">Option Value of Disability Insurance in Canada</a> Social Security Programs and Retirement Around the World: Disability Insurance Programs and Retirement.  NBER Book Series. University of Chicago Press.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. Forthcoming.  <a href="http://www.nber.org/chapters/c13739" target="_blank">Health Capacity to Work at Older Ages: Evidence from Canada</a> Social Security Programs and Retirement Around the World: The Capacity to Work at Older Ages.  NBER Book Series. University of Chicago Press.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Snoddon, T. 2016.  <a href="https://cdhowe.org/public-policy-research/carbon-copies-prospects-economy-wide-carbon-price-canada" target="_blank">Carbon Copies: The Prospects for an Economy-Wide Carbon Price in Canada</a> C.D. Howe Institute E-Brief, September 2016. 
+					</p>
+                    
+                    
+                </div>
+                <div id="2015" class="paper_tabcontent">
+                    <h3>JOURNAL ARTICLES (2015)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> Ariizumi, H., Y. Hu, and T. Schirle. 2015. <a href="http://link.springer.com/article/10.1007/s11150-013-9195-8" target="_blank">"Stand together or alone? Family structure and the business cycle in Canada.</a> Review of Economics of the Household, Vol. 13, Issue 1 (March), 135-161.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Beck, M., N. Rivers, R. Wigle, and H. Yonezawa. 2015. <a href="http://www.sciencedirect.com/science/article/pii/S0928765515000317" target="_blank">Carbon tax and revenue recycling: Impacts on households in British Columbia.</a> Resource and Energy Economics, Vol. 41, August 2015, 40-69.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Boeringer, C.,  N. Rivers, T. Rutherford, and R. Wigle. Forthcoming. <a href="http://economics.ca/cje/en/forthcoming.php" target="_blank">"Sharing the burden for climate change mitigation in the Canadian federation."</a> Canadian Journal of Economics.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bohl, M. J. Diesteldorf and P. Siklos. 2015. <a href="http://www.journals.elsevier.com/china-economic-review/" target="_blank">"Volatility Spillovers in Spot and Futures Markets. The case of China's First Stock Index Futures"</a> China Economic Review, 34, July: 207-244.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bohl, M. P. Kaufmann, and P. Siklos. 2015. <a href="http://search.proquest.com/econlit/docview/1700664828/7048803FDC084A87PQ/2?accountid=15090" target="_blank"> What Drove the Mid-2000s Explosiveness in Alternative Energy Stock Prices? Evidence from U.S., European and Global Indices </a> International Review of Financial Analysis, 40 (Jul 2015): 194-206.
+						</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Claus, E. and I. Claus. 2015. <a href="http://onlinelibrary.wiley.com/doi/10.1111/joes.2015.29.issue-4/issuetoc" target="_blank">"Savings and wealth accumulation: Measurement, influences and institutions"</a> Journal of Economic Surveys, 29(4): 587-593.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Claus, E. and M. Dungey. 2015. <a href="http://www.sciencedirect.com/science/article/pii/S0164070415001202" target="_blank">Can monetary policy surprises affect the term structure?</a> Journal of Macroeconomics.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Feldman, N.E. and B.J. Ruffle. 2015.  <a href="http://pubs.aeaweb.org/doi/pdfplus/10.1257/pol.20130101" target="_blank">The Impact of Including, Adding and Subtracting a Tax on Demand.</a> American Economic Journal: Economic Policy, 7(1): 95-118.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Filardo, A. and P. Siklos. 2015. <a href="http://www.tandfonline.com/loi/mree20#.VOzoVkKxG3o" target="_blank">"Prolonged Reserves Accumulation, Credit Booms, Asset Prices and Monetary Policy in Asia"</a> Emerging Markets Trade and Finance, May, DOI: 10.1080/1540496X.2014.998562.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Jones, R.A. and Y.W. Wu. 2015. Credit Exposure and Valuation of Revolving Credit Lines, Journal of Derivatives, Vol. 22, No.4, 37-53.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Koebel, K. and T. Schirle. (Forthcoming) <a href="https://economics.ca/cpp/en/forthcoming.php">"The differential impact of universal child benefits on the labour supply of married and single mothers"</a> Canadian Public Policy, March 2016.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lavender, B. and P. Siklos. 2015. <a href="http://www.utpjournals.press/doi/10.3138/cpp.2012-103" target="_blank">"The Credit Cycle and the Business Cycle in Canada and the US: Two Solitudes?"</a> Canadian Public Policy, Volume 41, Issue 2, June 2015.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Legree, S., T. Schirle and M. Skuterud. (Forthcoming)  <a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-2338" target="_blank">"The Effect of Labor Relations Laws on Unionization Rates within the Labor Force: Evidence from the Canadian Provinces"</a> Industrial Relations.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McCaig, B. and N. Pavcnik. 2015. <a href="https://www.aeaweb.org/articles.php?doi=10.1257/aer.p20151051" target="_blank">"Informal employment in a growing and globalizing low-income country,"</a> American Economic Review, 105(5): 545-50.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McLeod, L. 2015. <a href="http://onlinelibrary.wiley.com/doi/10.1111/coep.12090/abstract" target="_blank">"The association between physician supply and the mix of generalist and specialist services used."</a> Contemporary Economic Policy, Vol. 33, Issue 3: 434-449.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Morrison, W.G. Forthcoming 2016.  <a href="http://www.tandfonline.com/toc/vece20/current" target="_blank">Product Bundling and Shared Information Goods: A Pricing Exercise</a> Journal of Economic Education, Winter 2016.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Gillen, D. and W.G. Morrison. 2015. <a href="http://www.sciencedirect.com/science/article/pii/S0969699714001537" target="_blank">Aviation security: Costing, pricing, finance and performance</a> Journal of Air Transport Management, 48 (September, special issue): 1-12.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Neill, C. 2015 <a href="http://www.tandfonline.com/doi/abs/10.1080/09645292.2013.818104#.VOdwZkKxG3o" target="_blank"> Rising student employment: the role of tuition fees.</a> Education Economics, 23(1&2): 101-121.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Neuenkirch, M. and P. Siklos. 2015. <a href="http://www.ijcb.org/journal/ijcb15q1a7.htm" target="_blank">"How Monetary Policy Is Made: Two Canadian Tales"</a> International Journal of Central Banking, January 2015: 225-250.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Payne, A. and J. Smith. 2015. <a href="http://onlinelibrary.wiley.com/doi/10.1111/caje.12144/abstract" target="_blank">"Does income inequality increase charitable giving?"</a> Canadian Journal of Economics. Volume 48, Issue 2, 739-818.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and Z. Shtudiner. 2015 <a href="http://pubsonline.informs.org/doi/abs/10.1287/mnsc.2014.1927" target="_blank">"Are Good-Looking People more Employable?"</a> Management Science, 61(8): 1760-1776.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and Y. Tobol. 2016. <a href="http://link.springer.com/article/10.1007/s10683-016-9479-y?no-access=true" target="_blank">"Clever enough to tell the truth," </a> Experimental Economics, (online March 2016) DOI:10.1007/s10683-016-9479-y.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and O. Volij. Forthcoming <a href="http://link.springer.com/article/10.1007/s00182-015-0493-7" target="_blank">First-mover advantage in best-of series: an experimental comparison of role-assignment rules.</a> International Journal of Game Theory, DOI: 10.1007/s00182-015-0493-7.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J., A. Weiss, and A. Etziony. 2015. <a href="http://dx.doi.org/10.1016/j.socec.2015.08.001" target="_blank">The Role of Critical Mass in Establishing a Successful Network Market: An Experimental Investigation.</a> Journal of Behavioral and Experimental Economics, Volume 58, October: 101-110
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Schirle, T. 2015.  <a href="http://onlinelibrary.wiley.com/doi/10.1111/caje.12132/abstract" target="_blank">The effect of universal child benefits on labour supply.</a> Canadian Journal of Economics, 48(2), May 2015.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Schirle, T. 2015.  <a href="http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/canadian_public_policy/v041/41.4.schirle.html" target="_blank">The gender wage gap in the Canadian Provinces, 1997-2014.</a> Canadian Public Policy, 41(4), December 2015: 309-319.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Shiamptanis, C. 2015. <a href="http://onlinelibrary.wiley.com/doi/10.1111/ecin.12199/abstract" target="_blank">Risk assessment under a nonlinear fiscal policy rule.</a> Economic Inquiry, DOI: 10.1111/ecin.12199.
+					</p>
+					
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Siklos, P. 2015. <a href="http://search.proquest.com/econlit/docview/1737997185/7048803FDC084A87PQ/4?accountid=15090" target="_blank">Macroeconomic Implications of Financial Frictions in the Euro Zone</a>  Comparative Economic Studies, 57.2 (Jun 2015): 222-242.
+					</p>
+                    
+                    <h3>BOOK CHAPTERS, BOOKS, AND OTHER PUBLICATIONS(2015)</h3>
+                    
+                   
+					<p><img src="DESIGNS/laurier_leaf.png"> Beck, M. and R. Wigle. 2015. <a href="http://www.sustainableprosperity.ca/article3966" target="_blank">Carbon Pricing and Mind the Hissing</a> Sustainable Prosperity, Academic Research Paper, February 2015.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Claus, E. and I. Claus. (eds.) Forthcoming 2016. A collection of surveys on savings and wealth accumulation. United Kingdom: John Wiley & Sons Limited.
+					</p>
+
+					<p><img src="DESIGNS/laurier_leaf.png"> DeCicca, P. and L. McLeod (2015). Chapter 3: Smoking in Canada. In Life-course smoking behavior: Patterns and national context in ten countries, D.R. Lillard and R.  Christopoulou (eds.). Oxford University Press.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> DeCicca, P. and L. McLeod (2015).  Chapter 11: Smoking by men in cross-country perspective. In Life-course smoking behavior: Patterns and national context in ten countries, D.R. Lillard and R.  Christopoulou (eds.). Oxford University Press.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Legree, S., T. Schirle, and M. Skuterud. Forthcoming <a href="http://irpp.org/research/income-inequality-the-canadian-story/" target="_blank">Can Labour Relations Reform Reduce Wage Inequality?</a> in Income Inequality: The Canadian Story, edited by David A. Green, W. Craig Riddell and France St-Hilaire.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Milligan, K. and T. Schirle. 2016.  <a href="http://papers.nber.org/books/wise14-1" target="_blank">Option Value of Disability Insurance in Canada</a> Social Security Programs and Retirement Around the World: Disability Insurance Programs and Retirement.  NBER Book Series. University of Chicago Press.
+					</p>
+                    
+                </div>
+                <div id="2014" class="paper_tabcontent">
+                    <h3>JOURNAL ARTICLES (2014)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> Ariizumi, H., A. Sen and N. DeSousa. 2014. <a href="http://muse.jhu.edu/journals/canadian_public_policy/v040/40.1.sen.html">``Evaluating the Relationship between Pay and Research Productivity: Panel Data Evidence from Ontario Universities,'' </a> Canadian Public Policy, 40(1), pp. 1-14.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Boeringer, C.,  N. Rivers, T. Rutherford, and R. Wigle. Forthcoming. <a href="http://economics.ca/cje/en/forthcoming.php">"Sharing the burden for climate change mitigation in the Canadian federation."</a> Canadian Journal of Economics.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Bohl, Martin T., A.C. Klein, P.L. Siklos. 2014. <a href="http://www.sciencedirect.com/science/article/pii/S1057521914000416">"Short-selling bans and institutional investors' herding behaviour: Evidence from the global financial crisis."</a> International Review of Financial Analysis, Vol. 33, May 2014, 262-269.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Dhyne, E. and J. Konieczny. 2014. <a href="http://onlinelibrary.wiley.com/doi/10.1111/ecin.12072/abstract">Aggregation and the Staggering of Price Changes</a> Economic Inquiry, 52(2), 732-756.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Dhuey, E. and J. Smith. 2014. <a href="http://onlinelibrary.wiley.com/doi/10.1111/caje.12086/abstract;jsessionid=52BE82139F86A908BAEF6796A1C696BA.f03t01">"How Effective are School Principals in the Production of Student Achievement?"</a> Canadian Journal of Economics, Vol. 47, Issue 2, May/mai 2014, 634-663.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Huang, H., K. Pang, and Y. Tang. 2014. "The Effects of Exchange Rates on Employment in Canada."  Canadian Public Policy, 40(4), December 2014, 339-352.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Humphreys, B., L. McLeod, and J. Ruseski. 2014. <a href="http://onlinelibrary.wiley.com/doi/10.1002/hec.2900/abstract">Physical activity and health outcomes: evidence from Canada.</a> Health Economics 23(1), 34-55.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Feldman, N.E. and B.J. Ruffle. Forthcoming.  <a href="http://www.aeaweb.org/forthcoming/output/accepted_POL.php">The Impact of Including, Adding and Subtracting a Tax on Demand.</a> American Economic Journal: Economic Policy, 
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Fujiki, H. and M. Tanaka, 2014. <a href="http://dx.doi.org/10.1016/j.econlet.2014.07.032">"Currency demand, new technology, and the adoption of electronic money: Micro evidence from Japan"</a> Economics Letters, volume 125(1), October 2014, pp 5-8.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> McLeod, L. Forthcoming. <a href="http://socserv.mcmaster.ca/rdc/RDCwp21.pdf">"The association between physician supply and the mix of generalist and specialist services used."</a> Contemporary Economic Policy.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B.J., and Y. Tobol. 2014. <a href="http://www.sciencedirect.com/science/article/pii/S0014292113001402">Honest on Mondays: Honesty and the temporal separation between decisions and payoffs.</a> European Economic Review, 65, 126-135.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ruffle, B. J. and Z. Shtudiner. Forthcoming <a href="http://dx.doi.org/10.1287/mnsc.2014.1927">"Are Good-Looking People more Employable?"</a> Management Science, (published online May 29, 2014).
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Schirle, T. Forthcoming.  <a href="http://tammyschirle.org/research_uccb.html">The effect of universal child benefits on labour supply.</a> Canadian Journal of Economics.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Shiamptanis, C. Forthcoming. <a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1465-7295">Risk assessment under a nonlinear fiscal policy rule.</a> Economic Inquiry.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Siklos, P. 2014. <a href="http://onlinelibrary.wiley.com/doi/10.1111/infi.12043/full">"Communications Challenges for Multi-Tasking Central Banks: Evidence, Implications"</a> International Finance, Vol. 17(1), Spring 2014, 77-98.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Wilson,L,  Y.W. Wu, and S. Prejean. 2014. <a href="http://link.springer.com/article/10.1007%2Fs11293-013-9395-x">Are the Bailouts of Wall Street Complements or Substitutes?</a> Atlantic Economic Journal
+							March 2014, Volume 42, Issue 1, pp 21-38.
+					</p>
+                    
+                    <h3>BOOK CHAPTERS, BOOKS, AND OTHER PUBLICATIONS(2014)</h3>
+                    
+                    <p> None listed below.</p>             
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+
+<div id="Working Papers" class="tabcontent">
+      <div class="row2-space">
+        <div class="column2_1">
+            <div class = "research_heading">
+                <h3>Working Papers</h3>
+                <p>LCERPA members offer expertise in a wide range of fields. On this page we provide information on our members' recent research and publications, including papers published as part of the LCERPA Working Paper Series.
+                <br><br> WORKING PAPERS:</p>
+                <button class ="paper_links" onclick ="openPage('Current_W', this, 'rgb(204,204,255)')" id ="defaultOpen">Current</button>
+                <button class ="paper_links" onclick ="openPage('2018_W', this, 'rgb(204,204,255)')">2018</button>
+                <button class ="paper_links" onclick ="openPage('2017_W', this, 'rgb(204,204,255)')">2017</button>
+                <button class ="paper_links" onclick ="openPage('2016_W', this, 'rgb(204,204,255)')">2016</button>
+                <button class ="paper_links" onclick ="openPage('2015_W', this, 'rgb(204,204,255)')">2015</button>
+                <button class ="paper_links" onclick ="openPage('2014_W', this, 'rgb(204,204,255)')">2014</button>
+                <button class ="paper_links" onclick ="openPage('2013_W', this, 'rgb(204,204,255)')">2013</button>
+                <button class ="paper_links" onclick ="openPage('2012_W', this, 'rgb(204,204,255)')">2012</button>
+                <button class ="paper_links" onclick ="openPage('2011_W', this, 'rgb(204,204,255)')">2011</button>
+                <button class ="paper_links" onclick ="openPage('2010_W', this, 'rgb(204,204,255)')">2010</button>
+        
+                <div id="Current_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2019)</h3>
+                    <p> None listed below. </p>
+                </div>
+                <div id="2018_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2018)</h3>
+                    
+                    <p><img src="DESIGNS/laurier_leaf.png">
+					Lombardi, D., P. Siklos and S. St. Amand.    <a href="public/papers/LCERPA_2018_14.pdf" target="_blank"> A Survey of the International Evidence and Lessons Learned About Unconventional Monetary Policies: Is a ‘New Normal’ in our Future?</a> LCERPA  Working Paper No. 2018-14,  October 2018.
+                    </p>
+				    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This study examines the effectiveness of Unconventional Monetary Policies (UMP). It considers whether these policies were found to be successful and where the impact remains questionable. We survey the international financial market and macroeconomic effects of UMP both in the economies where these policies were introduced as well as their spillover effects across borders. The paper considers a wider range of UMP rather than the impact of specific policy instruments. We do so by providing a retrospective on the important case of Japan beginning in the later 1990s. We ask whether the Eurozone’s experience with UMP is substantively different, given the structure of policymaking. Finally, we ask if the ‘old normal’ is not in our future, whether the new normal in monetary policy should routinely include the panoply of instruments and interventions that make up what are now referred to as UMP? We conclude that using a wide range of instruments that can prevent economic collapse, but are not designed to promote adequate economic growth, does not appear to be a sound monetary policy strategy. Far better to adopt an effective communication strategy. This might also prevent future policy makers from asking or expecting too much from their central banks.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>    
+                    <p><img src="DESIGNS/laurier_leaf.png">
+					Reid, M., P. Siklos, and S. Du Plessis.    <a href="public/papers/LCERPA_2018_13.pdf" target="_blank"> What Drives Household Inflation Expectations in South Africa?Demographics and Anchoring Under Inflation Targeting </a> LCERPA  Working Paper No. 2018-13,  October 2018. 
+                    </p>
+				    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper examines the demographic determinants of inflation expectations in South Africa. Five surveys covering the period 2006-2016, and consisting of over 12000 observations were empirically examined using time series, cross-sectional, censored and quantile regressions. We assess whether factors such as gender, income, education, race and age, impact one year ahead inflation expectations. In doing so we uncover clear behavioural biases in how respondents view the inflation outlook. For example, education and income tend to be inversely related to inflation expectations. This is consistent with the literature although we observe significant changes over time that many other surveys are unable to uncover. In addition, it seems that inflation expectations respond to recently observed inflation. Unlike other studies, younger individuals have lower inflation expectations and we conjecture that the adoption of inflation targeting in South Africa played a role. Finally, we find that demographic characteristics interact with communication by the South African Reserve Bank, as well whether inflation is rising or falling. These are two additional novel features of the analysis.
+                            </td>
+                        </tr>
+                    </table>	
+				    <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Lombardi, D., P. Siklos and X. Xie.    <a href="public/papers/LCERPA_2018_12.pdf" target="_blank"> Monetary Policy Transmission in Systemically Important Economies and China’s Impact</a>
+                    LCERPA  Working Paper No. 2018-12,  September 2018. </p>
+					<table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper examines the monetary policy transmission mechanism in four systemically important economies. The impact of monetary policy is found to be broadly comparable for China, the US, the Eurozone, and Japan. Identifying a role for the financial sector is essential to unpacking various channels through which monetary policy operates. Global factors play a significant role and their impact is strongest for China and weakest for Japan. China’s impact is significant with the Eurozone displaying the most interdependence and Japan the least. Time-varying VARs suggest that contrasts in the responses to monetary policy shocks persist highlighting some of the remaining differences in the transmission mechanism. Finally, there is no apparent structural change in the estimated relationships around the time when the Fed intervened after 2008. It is conjectured that Quantitative Easing may well have prevented such a break.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>			
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Lombardi, D., P. Siklos and S. St. Amand.<a href="public/papers/LCERPA_2018_11.pdf" target="_blank"> A Survey of the International Evidence and Lessons Learned About Unconventional Monetary Policies: Is a ‘New Normal’ in our Future?</a>
+                    LCERPA  Working Paper No. 2018-11,  July 2018. </p>
+					<table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This study examines the effectiveness of unconventional monetary policies (UMP). It considers whether these policies have been successful and where their effects remain uncertain. We survey both the domestic financial market and macroeconomic effects of UMP in the economies where these policies were introduced and their international spillover effects. The paper considers the impact of a wide range of UMP rather than the effects of specific policy instruments. We also provide a retrospective on the important case of Japan beginning in the late1990s and ask whether the Eurozone’s experience with UMP is substantively different given its structure of policymaking. Finally, we ask: if the ‘old normal’ is not in our future, should the ‘new normal’ in monetary policy routinely include what we now refer to as UMP? We conclude that UMP can prevent economic collapse but are not designed to promote stronger long-term economic growth. Apart from new communication strategies, the use of UMP under normal circumstances does not appear to be a sound monetary policy strategy. Failure to learn this lesson might also prevent future policy makers from asking or expecting too much from their central banks.
+                            </td>
+                        </tr>
+                    </table>	
+                    <br>
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    Ruffle, B.J. and A. Wilson.    <a href="public/papers/LCERPA_2018_10.pdf" target="_blank"> The Truth About Tattoos.</a>
+                    LCERPA  Working Paper No. 2018-10,  June 2018. </p>
+					<table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Despite their ubiquity, tattoos continue to be associated with dishonesty. Yet, scarce behavioral 
+                        evidence exists. We test whether the tattooed and non-tattooed differ in their dishonest 
+                        reporting in two consecutive incentivized experiments. First, subjects toss a coin privately 
+                        five times and receive payment for each heads reported. After, subjects perform five additional 
+                        coin tosses with the payment for each heads reported increased tenfold. We find few differences 
+                        in the reporting behavior between the tattooed and non-tattooed in the number of heads reported 
+                        in either reporting task or the difference between the two. Strategic dishonesty is limited to a 
+                        small minority of subjects and to only one additional reported heads in the high-stakes tosses.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Bayer, Y., B.J. Ruffle, R. Zultan, and T. Dwolatzky.    <a href="public/papers/LCERPA_2018_9.pdf" target="_blank"> Time preferences of older people with mild cognitive impairment.</a>
+                        LCERPA  Working Paper No. 2018-9,  May 2018. </p>
+				    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Cognitive impairment has a detrimental influence on the decision-making capabilities of older people. 
+                        This study investigates the ways in which the time preferences of older adults with mild cognitive 
+                        impairment (MCI) are influenced by their executive cognitive abilities. Within the framework of this
+                         study, older adults underwent a cognitive evaluation using a computerized cognitive assessment 
+                         battery and then responded to a questionnaire eliciting their preferences for changing amounts 
+                         of money and time periods. We found that those individuals with better executive cognitive 
+                         abilities displayed a lower rate of subjective discounting. This study advances our understanding 
+                         of economic decision-making in old age, especially as influenced by cognitive decline. We hope that 
+                         our findings will serve as a catalyst in the construction of financial tools relevant to the 
+                         growing population of older people in society, and thus help to alleviate negative phenomena 
+                         resulting in older individuals being subjected to fraud and discrimination.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Bayer, Y., B.J. Ruffle, Z. Shtudiner, and R. Zultan.    <a href="public/papers/LCERPA_2018_8.pdf" target="_blank"> Costly Superstitious Beliefs: Experimental Evidence.</a>
+                        LCERPA  Working Paper No. 2018-8,  March 2018. </p>
+				    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Expectant parents experience a variety of emotions, including joy, anticipation as well as anxiety and fear related to the health of the fetus, the delivery and the newborn. These sources of uncertainty and stress render expectant mothers suspectible to the influence of popular beliefs. We design an experiment to evaluate the widespread Israeli belief that a baby’s room should remain unfurnished until after the baby is born. We test the impact of this belief on the economic decisions of pregnant Jewish women in Israel. Our findings show that many pregnant women, especially in the second half of pregnancy, prefer to avoid challenging popular beliefs – even at a financial cost. The negative affective consequences of “tempting fate” lead to a preference for a small monetary amount over new furniture for the newborn. The strength of popular beliefs and its influence on individual choice vary in accordance with ethnic origin and degree of religiosity.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					McCaig, B. and J. Nanowski.    <a href="public/papers/LCERPA_2018_7.pdf" target="_blank"> Business Formalization in Vietnam.</a>
+                        LCERPA  Working Paper No. 2018-7,  February 2018. </p>
+                    <table>
+                        <tr>
+                            <td><em>Abstract</em>. 
+                            We estimate the impact of business formalisation using nationally representative panel data on
+                            businesses in Vietnam. Our data allows us to observe businesses for two surveys prior to
+                            obtaining a license and hence to control for differential trends before formalisation. We find that
+                            obtaining a license is not associated with an increase in profits or other business outcomes such
+                            as revenue, expenses, and employment once we control for differential trends. Controlling for
+                            trends is crucial, as estimates that ignore trends consistently find a larger positive association
+                            between becoming licensed and business performance. Our results suggest that inducing more
+                            businesses to register is unlikely to bring about large-scale changes for these businesses.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Bohl, M.T>, B. Essid, and P. Siklos.  <a href="public/papers/LCERPA_2018_6.pdf" target="_blank"> Short-Selling Bans and the Global Financial Crisis:
+                    Are they Inter-Connected?</a>LCERPA  Working Paper No. 2018-6,  January 2018.</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper begins with the observation that short-selling bans spread globally in 2008. We find
+                        some evidence that the bans were unsuccessful at least insofar as they did not take into account
+                        the global component a short-selling ban which reduced equity returns in about a third of the 17
+                        countries sampled, most notably in some of the major advanced economies. In the individual
+                        countries we examine, the bans had relatively little impact. Our results are suggestive as
+                        evidence that the bans stemmed further deterioration in stock prices that policy makers sought to
+                        avoid, at least in a few economies.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Bohl, M.T., P. Siklos and C. Wellenreuther.   <a href="public/papers/LCERPA_2018_5.pdf" target="_blank"> Speculative Activity and Returns to Volatility of Chinese Major
+                    Agricultural Commodity Futures</a>LCERPA  Working Paper No. 2018-5,  January 2018.
+					</p> 
+                    <table>
+                        <tr>
+                            <td><em>Abstract</em>. 
+                            Chinese futures markets for agricultural commodities are among the fastest growing
+                             futures markets in the world and trading behaviour in those markets is perceived as
+                             highly speculative. Therefore, we empirically investigate whether speculative activity
+                             in Chinese futures markets for agricultural commodities destabilizes futures returns.
+                             To capture speculative activity a speculation and a hedging ratio are used. Applying GARCH models we first analyse the influence of both ratios on the conditional volatility of eight heavily traded Chinese futures contracts. Additionally, VAR models
+                            in conjunction with Granger causality tests, impulse-response analyses and variance
+                             decompositions are used to obtain insight into the lead-lag relationship between speculative activity and returns volatility. For most of the commodities, we find a positive  influence of the speculation ratio on conditional volatility. The results relying on the
+                             hedging ratio are inconclusive.
+                            </td>
+                        </tr>
+                        </table>
+                    <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Burdekin, R. and P. Siklos.    <a href="public/papers/LCERPA_2018_4.pdf" target="_blank"> Quantifying the Impact of the November 2014
+                    Shanghai-Hong Kong Stock Connect</a> LCERPA  Working Paper No. 2018-4,  January 2018.
+					</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        The November 2014 Shanghai-Hong Kong Stock Connect represented an important step
+                        in China’s capital account liberalization, allowing relatively free movement of investor funds
+                        between the two markets for the first time. We offer a quantification of the effects of the new
+                        program, examining Northbound and Southbound flows of funds over the first two years of the
+                        Stock Connect. While controlling for other sentiment and liquidity effects, we test how these
+                        flows may have affected the extent of the premium seen for local A-share listings in Shanghai
+                        relative to the prices accruing to the same companies in Hong Kong market trading.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Lombardi, D. , P. Siklos, and S. St. Amand    <a href="public/papers/LCERPA_2018_3.pdf" target="_blank"> Asset Price Spillovers From Unconventional Monetary Policy: A Global Empirical Perspective</a> LCERPA  Working Paper No. 2018-3,  January 2018.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper sheds new light on spillovers from US monetary policies before, during and after the
+                        2008-09 global financial crisis by examining the behavior of select financial asset returns and
+                        incorporating indicators of the content of US Federal Open Market Committee announcements.
+                        The impact of US monetary policies is examined for systematically-important and small-open
+                        advanced economies. US monetary policy surprise easings are found to have decreased yields in
+                        advanced economies post-crisis. The impact of the content of US Federal Open Market
+                        Committee statements, coded using text analysis software, is also found to be significant but
+                        sensitive to the state of the economy.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Siklos, P.L.   <a href="public/papers/LCERPA_2018_2.pdf" target="_blank"> Boom-and-Bust Cycles in Emerging Markets: How Important is the Exchange Rate?</a> LCERPA  Working Paper No. 2018-2,  January 2018.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper examines the macroeconomic implications of exchange rate shocks in a sample of 13
+                        emerging market and 6 advanced economies since the early 1990s. Factor-augmented vector
+                        autoregressions are estimated with three separate factors identified. They are: real, monetary
+                        and financial factors. The main conclusion is that there is no ‘one size fits all’ when interpreting
+                        the domestic responses to an exchange rate shock. International policies that aim to define a
+                        particular exchange rate or exchange rate regime are unlikely to be able to deal with so many
+                        idiosyncratic responses. Nor is it the case that a particular monetary policy strategy, such as
+                        inflation targeting, can immunize a domestic economy against all external shocks. International
+                        cooperation should instead encourage individual economies to seek out the menu of policies
+                        that ensure that each one’s house is in order.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Rivers, N. and R. Wigle.    <a href="public/papers/LCERPA_2018_1.pdf" target="_blank"> An evaluation of policy options for reducing greenhouse
+					gas emissions in the transport sector:
+					The cost-effectiveness of regulations versus emissions
+					pricing</a> LCERPA  Working Paper No. 2018-1,  January 2018.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        The reduction of greenhouse gas emissions from road transport is a key policy goal that is
+                        being pursued by both federal and provincial governments using a range of policies. This paper
+                        considers the cost of alternative approaches to reducing emissions from road passenger travel
+                        in Canada. Our findings reinforce the widely-held belief that a revenue-neutral carbon tax is the
+                        most cost-effective tool to reduce greenhouse gas emissions. Regulatory instruments on their
+                        own, such as a low carbon fuel standard, vehicle greenhouse gas intensity regulation, or zero
+                        emission vehicle mandate, achieve a given reduction at much higher cost. We show, however,
+                        that a combination of regulatory instruments can better approach the cost-effectiveness of a
+                        carbon tax than individual regulations. We provide insight about the optimal combination of
+                        regulatory instruments in the Canadian context, and find that both a low carbon fuel standard
+                        and an zero emission vehicle mandate can be jointly used to reduce GHG emissions from the
+                        transport sector. Our analysis is timely, given the rapidly evolving policies in this sector.
+                            </td>
+                        </tr>
+                    </table>
+						
+                </div>
+                <div id="2017_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2017)</h3>
+                    
+					 <p><img src="DESIGNS/laurier_leaf.png">
+					Ruffle, B.J. and A. Wilson.    <a href="public/papers/LCERPA_2017_9.pdf" target="_blank"> Tat will tell: Tattoos and time preferences </a>
+						LCERPA  Working Paper No. 2017-9,  December 2017.
+					
+						</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Forty percent of Americans under the age of 40 have at least one tattoo. Yet survey and
+                        experimental evidence suggests that the tattooed are viewed negatively and may face
+                        discrimination in the labor market and in commercial transactions. In view of the potentially
+                        adverse economic consequences of a tattoo, the decision to get one may be regarded as shortsighted
+                        and impulsive. We collect numerous measures of time preferences and impulsivity of
+                        tattooed and non-tattooed subjects and find broad-ranging and robust evidence that those with
+                        tattoos, especially visible ones, are more short-sighted and impulsive than the non-tattooed. Almost
+                        nothing mitigates these results, neither the motive for the tattoo, nor the time contemplated before
+                        getting tattooed, nor the time elapsed since the most recent tattoo. Even the expressed intention to
+                        get a(nother) tattoo predicts increased short-sightedness and helps to pin down the direction of
+                        causality between tattoos and short-sightedness.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Kaplan, T.R., B.J. Ruffle, and Z. Shtudiner.    <a href="public/papers/LCERPA_2017_8.pdf" target="_blank"> Cooperation through Coordination in Two Stages </a>
+						LCERPA  Working Paper No. 2017-8,  September 2017.
+					
+                            </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Efficient cooperation often requires coordination, such that exactly one of two players takes
+                        an available action. If the decisions whether to pursue the action are made simultaneously,
+                        then neither or both may acquiesce leading to an inefficient outcome. However,
+                        inefficiency may be reduced if players move sequentially. We test this experimentally by
+                        introducing repeated two-stage versions of such a game where the action is individually
+                        profitable. In one version, players may wait in the first stage to see what their partner did
+                        and then coordinate in the second stage. In another version, sequential decision-making is
+                        imposed by assigning one player to move in stage one and the other in stage two. Although
+                        there are fewer cooperative decisions in the two-stage treatments, we show that overall
+                        subjects coordinate better on efficient cooperation and on avoiding both acquiescing. Yet,
+                        only some pairs actually achieve higher profits, while the least cooperative pairs do worse
+                        in the two-stage games than their single-stage counterparts. For these, rather than
+                        facilitating coordination, the additional stage invites attempts to disguise uncooperative
+                        play, which are met with punishment.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    Morrison, W.G., and J. de Wit.    <a href="public/papers/LCERPA_2017_7.pdf" target="_blank"> US Open Skies Agreements and Unlevel Playing Fields.  </a>
+                    LCERPA  Working Paper No. 2017-7,  August 2017.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We examine the relationship between ‘Open Skies’ agreements (OSAs) signed between the USA 
+                        and various countries or regions on these markets and the absence of a so called
+                         ‘level playing field’; i.e. the existence of subsidies and other forms of protection 
+                         that advantage one nation’s airlines over those of co-signatories to an OSA. We argue 
+                         that under an oligopoly market structure, strategic competition brought about by 
+                         OSAs creates incentives to subsidize and/or protect domestic airlines. Such incentives 
+                         are maintained or amplified by political lobbying efforts that bias civil aviation 
+                         policies towards producer interests over wider measures of economic welfare. We report 
+                         on financial aid and policies which have co-evolved along with OSAs and which have 
+                         advantaged US airlines during the OSA period and which suggest that unlevel playing 
+                         fields have been perpetuated and possibly made more unlevel during the era of OSAs.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Shiamptanis, C.    <a href="public/papers/LCERPA_2017_6.pdf" target="_blank"> Austerity Measures: Do they avert solvency crises? </a>
+				    LCERPA  Working Paper No. 2017-6,  June 2017.
+					</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Many countries are adopting austerity measures, whereby governments aggressively
+                        raise taxes, with the hope to dispel future solvency crisis. This paper investigates the
+                        implications of austerity on the likelihood of solvency crisis. We derive the maximum
+                        level of debt consistent with solvency, labelled as the effective fiscal limit on debt, and
+                        we show that its position depends on austerity. We find that countries like Italy that
+                        undergo strict austerity could lower their effective fiscal limit and induce a solvency
+                        crisis in the near future.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Gkiourkas, E., T. Panagiotidis, and G. Pelloni.    <a href="public/papers/LCERPA_2017_5.pdf" target="_blank"> Revisiting the Macroeconomic Effects of Labor Reallocation. </a>
+				    LCERPA  Working Paper No. 2017-5,  June 2017.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We revisit the macroeconomic effects of labor reallocation within the
+                        framework of Campbell and Kuttner (1996). We re-estimate their model,
+                        update the sample, and employ generalized and local impulse response
+                        functions. We confirm that total employment responses to reallocation
+                        shocks remain significant.
+                        </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+				    Siklos, P.    <a href="public/papers/LCERPA_2017_4.pdf" target="_blank">What Has Publishing Inflation Forecasts Accomplished?  Central Banks And Their Competitors.</a>
+				    LCERPA  Working Paper No. 2017-4,  April 2017.
+                    </p> 
+                    <table>
+									<tr>
+									<td><em></em>. 
+									
+										</td>
+									</tr>
+								</table>
+		            <br>
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Lombardi, D., P. Siklos, and S. St.Amand.    <a href="public/papers/LCERPA_2017_3.pdf" target="_blank">Government Bond Yields at the Effective Lower Bound: International Evidence.</a> LCERPA  Working Paper No. 2017-3,  April 2017.
+				</p>
+                    <table>
+                        <tr>
+                        <td><em></em>. 
+
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Wu, Y.W., and C. Liu.     <a href="public/papers/LCERPA_2017_2.pdf" target="_blank"> Bank CEO inside debt and loan contracting </a>
+						LCERPA  Working Paper No. 2017-2,  April 2017.
+						
+                            </p> 
+                    <table>
+				            <tr>
+									<td><em>Abstract</em>. 
+									Contrary to the theoretical prediction that CEOs with large debt-based compensation take lower levels of risk, we find that banks with higher CEO inside debt compensation extend syndicated loans with smaller number of lenders, lower spread, less covenant, and higher maturity. Using two-stage selection models, we reconciled these seemingly counter intuitive results of inside debt leads to less conservative loan contracting terms by incorporating banks selection effect. We find that the mechanism of inside debt limit bank risk-taking in loan contracting is through making loans to safer borrowers in the first place, but not through tighter loan terms. These results are consistent and robust to instrumental variables and structure models that control for the endogeneity of relationships. 
+										</td>
+									</tr>
+				        </table>	
+					<br>	
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Wu, Y.W., C. Truong, and C.Liu.    <a href="public/papers/LCERPA_2017_1.pdf" target="_blank"> Lehman Sisters: Female Bank Executives and Risk-Taking </a>
+						LCERPA  Working Paper No. 2017-1,  March 2017.
+						
+                            </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper studies the impact of female executives on risk-taking within US banks. An examination of US bank panel data from 2002 to 2010 provides evidence that female executives reduce levels of risk-taking in banks. We also find that a more balanced gender ratio has a greater impact on bank risk-taking than merely with the presence of female executive. The results are robust to alternative specifications of riskiness and instrument variable approach. However, when we only use part of the sample period surrounding the financial crises of 2007-2008, the results do not hold.  We interpret the results as suggesting that having female executives and more balanced gender ratios in the executive team reduces bank risk-taking overall. But the risk-reduction becomes less effective during crisis years. 
+                            </td>
+                        </tr>
+                    </table>	
+					<br>	
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Daniel, B.C. and C. Shiamptanis.    <a href="public/papers/LCERPA_2015_8.pdf" target="_blank"> "Predicting 
+					Sovereign Fiscal Crises: High-Debt Developed Countries." </a>
+					LCERPA  Working Paper No. 2015-8, <em>*Updated*</em> March 2017.
+                    </p>						
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Every country has a fiscal limit on debt, beyond which the country's economic and political systems cannot raise taxes and/or reduce spending sufficiently to maintain solvency. We assume fiscal crises are created by insolvency due to fiscal limits, and use historical data on debt and surpluses to explain why countries with similar
+                        debt levels have different crisis experiences. We use values for the maximum historical surplus together with estimates of fiscal feedback rules to estimate debt limits for 
+                        each country. Debt limits vary considerably across countries. Defining fiscal space
+                        as the largest increase in debt, for a particular surplus, consistent with solvency, we
+                        separate countries into risk categories based on fiscal space. Greece and Portugal
+                        eroded their fiscal space several years, prior to their fiscal crises, placing them in the
+                        highest risk category and predicting the crises that followed. Canada and Belgium
+                        maintained large enough fiscal space to achieve safe status. Other countries reduced
+                        fiscal space, with three eroding fiscal space in 2014, warning of future crises.
+                            </td>
+                        </tr>
+                    </table>	
+                    
+                                
+                </div>
+                <div id="2016_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2016)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Milligan, K. and T. Schirle.   <a href="public/papers/LCERPA_2016_3.pdf" target="_blank"> The health and capacity to work of older men and women in Canada. </a>
+				    LCERPA Working Paper No. 2016-3, December 2016.
+                    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We address the health capacity to work among Canadian older workers using two complementary methods, aggregate mortality risk and individual health indicators. We find that men in 2012 would need to work more than five additional years between ages 55-69 to keep pace with how much men in 1976 worked, holding health capacity constant. For working women, the comparable result is only two years more work. Most of these gaps arose before the mid-1990s, as employment advances have offset mortality improvements since then. Regionally, more than half the Ontario-Atlantic employment difference among older men is rooted in health differences.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Shelton, B. and W. Chan.    <a href="public/papers/LCERPA_2016_2.pdf" target="_blank"> Volatility Spillovers Arising from the Financialization of Commodities</a>, 
+				    LCERPA Working Paper No. 2016-2, November 2016.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        The author found that the rapid growth of capital flowing into commodity markets as they develop into a formal asset class has put downward pressure on the realized volatility of non-energy commodities in the United States. These findings are a result of analysis performed using a difference-in-difference (DID) framework looking into the volatility characteristics of commodities included in the S&P GSCI versus off-index commodities. Additionally, two OLS models directly test the relationship between financialization and realized volatility while controlling for economic and financial fundamentals. Policymakers and regulators should be cognizant of the benefits financial investors (speculators) introduce to commodity markets. These diversified investors improve the ability to distribute risk among market participants, which lowers volatility and risk premiums. Lower risk premiums allow commodity producers and farmers to hedge at higher futures prices. (JEL Q02, G10)
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Morrison, W. and R. Oxoby.  <a href="public/papers/LCERPA_2016_1.pdf" target="_blank"> Risk Taking, Intertemporal Choice, and Loss Aversion.</a> LCERPA Working Paper No. 2016-1, July 2016.			
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We report on two laboratory experiments testing for the presence of loss aversion,
+                        separate from risk aversion, in decisions involving risk and intertemporal choice. Both
+                        experiments utilize an asset legitimacy protocol to control for ‘house money’ effects. In
+                        our first experiment, we augment the Holt-Laury risk preference elicitation protocol to
+                        address the effects of loss aversion. In our second experiment, we explore loss aversion
+                        using a discount rate elicitation protocol that controls for risk preferences. Our results
+                        show that loss aversion can be separated from risk preferences and has a profound effect
+                        in decision-making.
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div id="2015_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2015)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Saguil, K. and C. Neill.    <a href="public/papers/LCERPA_2015_14.pdf" target="_blank"> Universally Subsidized Day Care and its Effects on Youth Crime Rates: Evidence from Quebec </a>
+				    LCERPA Working Paper no. 2015-14, September 2015.
+				    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Research from intensive, targeted early childhood intervention programs suggests they can have large, long-run private and public benefits, much of which come from reductions in the propensity to engage in criminal activity. That research is being used to advocate for increased government expenditures universal early childhood programs.  However, it is not clear that interventions would have the same effects on the general population as they do on disadvantaged children. The introduction of Quebec’s universally subsidized day care program in 1997 provides an opportunity to take a first glimpse at the long run effects of a non-targeted early childhood program. Studies of the short-run effects of the program show no evidence of improvements in child development in the short run, but the long run effects have not been studied. We use a difference-in-differences strategy to examine the policy’s effects on youth crime rates, using the rest of Canada as the counterfactual.  Overall, we find no evidence of large reductions in youth crime rates among the cohort of Quebec youth following the introduction of subsidized day care relative to youth in the rest of Canada – indeed, if anything, they appear to have increased. We conclude that caution is necessary in using findings of large social benefits of early childhood education from small, intensive, targeted interventions to draw conclusions that larger-scale universal programs implemented in a different context. 
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Kaplan, T.R. and B.J. Ruffle.    <a href="public/papers/LCERPA_2015_13.pdf" target="_blank"> Waiting to Cooperate?
+					Cooperation in one-stage and two-stage games </a> LCERPA Working Paper No. 2015-13, September 2015.
+					</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Cooperation between two players often requires exactly one to take the available action, while the other acquiesces. If the decisions whether to pursue the action are made simultaneously, then neither or both may acquiesce leading to an inefficient outcome. However, inefficiency may be avoided if players move sequentially. We test experimentally whether two-stage versions of this entry-exit game enhance cooperation. In one version, players may wait in the first stage to see what their paired player did and then coordinate in the second stage. In another version, sequential decision-making is imposed by assigning one player to move in stage one and the other player in stage two. Although there are fewer cooperative decisions in the two-stage treatments, we show that subjects coordinate better on efficient cooperation and on avoiding both acquiescing. Consequently they achieve higher profits. Yet, the least cooperative pairs do worse in the two-stage games than their single-stage counterparts. They use the second stage not to facilitate coordination but to disguise their uncooperative play or to punish their opponents.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Ruffle, B.J. and Y. Tobol. <a href="public/papers/LCERPA_2015_12.pdf" target="_blank"> Clever enough to tell the truth. </a>
+				    LCERPA Working Paper No. 2015-12, September 2015 (updated March 2016).
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We conduct a field experiment on 427 Israeli soldiers who each rolled a six-sided die in private and reported 
+                        the outcome. For every point reported, the soldier received an additional half-hour early release from the army 
+                        base on Thursday afternoon. We find that the higher a soldier’s military entrance score, 
+                        the more honest he is on average. We replicate this finding on a sample of 156 civilians paid in cash 
+                        for their die reports. Furthermore, the civilian experiments reveal that two measures of cognitive ability 
+                        predict honesty, whereas self-report honesty questions and a consistency check among them are of no value. 
+                        We provide a rationale for the relationship between cognitive ability and honesty and discuss the 
+                        generalizability of this result.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Koebel, K. and T. Schirle.    <a href="public/papers/LCERPA_2015_11.pdf" target="_blank"> The differential impact of universal child benefits on the labor supply of married and single mothers </a>
+				    LCERPA Working Paper No. 2015-11, May 2015.
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Using a difference-in-differences estimator, we find the Canadian Universal Child Care Benefit (a demogrant paid to families with children under age 6 that was introduced in July 2006) has significant negative effects on the labor supply of legally married mothers but significant positive effects on the labor supply of single mothers.  The positive effect for single mothers is concentrated among divorced mothers, with results suggesting divorced mothers’ likelihood of participating in the labor force rises by 2.8 percentage points when receiving the benefit.  This contrasts with a reduction in the likelihood of legally married mothers participating in the labor force by 1.4 percentage points.  Further, the effects for single moms primarily represent entry to employment and the labor force (extensive margin) and not an increase in hours among those who would have been working without the benefits.  The estimated effects for common-law married mothers and single never-married mothers are not statistically significant.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+					
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Ruffle, B.J., A. Weiss and A. Etziony    <a href="public/papers/LCERPA_2015_10.pdf" target="_blank"> 
+					"The Role of Critical Mass in Establishing a Successful Network Market: An Experimental Investigation." </a>
+					LCERPA Working Paper No. 2015-10, May 2015.
+				    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        A network market is a market in which the benefit each consumer derives from a good is an increasing
+                         function of the number of consumers who own the same or similar goods. A major obstacle that plagues 
+                         the introduction of a network good is the ability to reach critical mass, namely, the minimum number 
+                         of buyers required to render purchase worthwhile. This can be likened to a coordination game with 
+                         multiple Pareto-ranked equilibria. Through a series of experiments, we study consumers' ability to 
+                         coordinate on purchasing the network good. Our results highlight the central importance of the level of the 
+                         critical mass. Neither an improved reward-risk ratio through lower prices nor previous success at a lower critical 
+                         mass facilitates the establishment of a network market when the critical mass is sufficiently high. 
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Snoddon, T.    <a href="public/papers/LCERPA_2015_9.pdf" target="_blank"> 
+					"Prospects for Integrated Carbon Taxes in Canada: Lessons from Federal-Provincial Tax Coordination." </a>
+				    LCERPA Working Paper No. 2015-9, May 2015.
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        The global nature of the climate change externality calls for a global response but so far
+                         none has emerged. Instead, climate policies are being implemented by subnational and national
+                          governments, resulting in a fragmented policy landscape at the national level. This 
+                          is certainly the case in Canada. While this outcome is not particularly surprising, 
+                          from an economics perspective, it is arguably more costly, less efficient, and 
+                          less effective at achieving emissions reductions than a more harmonized approach. 
+                          Is this outcome the unavoidable price of Canadian federalism? Is a more harmonized 
+                          carbon tax approach feasible? This paper considers Canada’s experience with three 
+                          major taxes, jointly occupied by federal and provincial governments. Despite its 
+                          highly decentralized structure, Canada has a history of tax harmonization and 
+                          coordination arrangements for these taxes. By examining the evolution of these 
+                          arrangements, the paper offers insights on the prospects of adopting a more harmonized
+                           carbon tax approach to address climate change.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Daniel, B.C. and C. Shiamptanis.    <a href="public/papers/LCERPA_2015_8.pdf" target="_blank"> "Predicting 
+					Sovereign Fiscal Crises: High-Debt Developed Countries." </a>
+					LCERPA  Working Paper No. 2015-8, <em>*Updated*</em> March 2017.
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Every country has a fiscal limit on debt, where that limit represents a debt level
+                        so high that the country's economic and political systems cannot raise taxes or
+                        reduce spending sufficiently to maintain solvency. At the limit, creditors flee, and
+                        the government faces a fiscal crisis. If we knew the limit, then we could estimate the
+                        probability of a fiscal crisis as the probability of reaching the limit. Governments do
+                        not announce their fiscal limits. In this paper, we estimate fiscal feedback rules for
+                        six-high-debt developed countries to investigate the extent to which the systematic
+                        response of the primary surplus to debt reveals information on the fiscal limit. In
+                        general, estimation of a fiscal feedback rule does not reveal an explicit fiscal limit for
+                        a country that has not experienced a crisis. However, estimates of long-run debt,
+                        together with debt history, can be combined to yield an estimate of a lower bound
+                        on the fiscal limit. We use estimates of the fiscal rule for six high-debt developed
+                        countries to project debt forward from dates, following the beginning of the financial
+                        crisis, and compare the projections with our estimates of the lower bound on debt.
+                        We label countries, whose debt projections exceed the lower bound as high-risk.
+                        Both Greece and Portugal enter the high-risk category about one year prior to their
+                        financial crises. Italy is at high risk in 2012 and others are at low risk through 2012.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Pelloni, G. and M. Savioli.    <a href="public/papers/LCERPA_2015_7.pdf" target="_blank"> "Why is Italy doing so badly?" </a>
+				    LCERPA Working Paper No. 2015-7, April 2015.
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We present the current Italian economic crisis as a phase of a major
+                        systemic decline. We argue that “Italy’s system” has forced the
+                        country to abandon a “dynamic” view of comparative advantage,
+                        crucial for sustained economic growth, in favour of a “static” view
+                        of specialization. Creative destruction has been hampered and the
+                        indispensable sectoral restructuring has not taken place, leading to
+                        stagnation. The roots of this decline lay in collective action issues
+                        and an implicit contract between elites and civil society. We suggest
+                        that solving these issues is indispensable in order to support a
+                        “dynamic” view of comparative advantage and so the re-start of the
+                        Italian economy and society.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Schirle, T.    <a href="public/papers/LCERPA_2015_6.pdf" target="_blank"> "The gender wage gap in the Canadian provinces, 1997-2014." </a>
+				    LCERPA Working Paper No. 2015-6, April 2015. <em> More information about this project can be found <a href="http://www.tammyschirle.org/research_wagegap.html">here</a>.</em>
+                    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This study examines the gender gaps in average hourly wages facing private sector full time employees in the Canadian provinces, using data from the Canadian Labour Force Survey.  Over the 1997-2014 period, all provinces have made progress toward narrowing the gender wage gap, though notably little progress was made in Newfoundland and Alberta.  Much of the variation across provinces in the gender gap is eliminated once we account for gender differences in individual and job characteristics in each province.  Decomposition results suggest a large portion of the wage gap in each province is explained by gender differences in industry and occupation.  The unexplained portion of the wage gap has been reduced in many provinces as gender differences in industry and occupation play an increasingly important role.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Bohl, M.T., J. Diesteldorf, and P.L. Siklos.    <a href="public/papers/LCERPA_2015_5.pdf" target="_blank"> The effect of index futures trading on volatility: Three markets for Chinese stocks
+                    </a>        
+                    LCERPA Working Paper No. 2015-5, February 2015.  (This paper has been accepted for publication in <em> China Economic Review</em> as "Volatility Spillovers in Spot and Futures Markets: The case of China's First Stock Index Futures.")
+				    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper examines whether the introduction of Chinese stock index futures
+                        had an impact on the volatility of the underlying spot market. To this end,
+                        we estimate several Generalized Auto-Regressive Conditional Heteroscedasticity
+                        (GARCH) models and compare our findings for mainland China with Chinese
+                        index futures traded in Singapore and Hong Kong. Our results indicate that
+                        Chinese index futures decrease spot market volatility in all three spot markets
+                        considered. In contrast, we do not obtain the same results for the companion
+                        index futures markets in Hong Kong and Singapore. China’s stock market is
+                        relatively young and largely dominated by private retail investors. Nevertheless,
+                        our evidence is favorable to the stabilization hypothesis usually confirmed in
+                        mature markets.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					Filardo, A.J. and P.L. Siklos.    <a href="public/papers/LCERPA_2015_4.pdf" target="_blank"> Prolonged Reserves Accumulation, Credit Booms, Asset Prices and Monetary Policy in Asia</a>
+				    LCERPA Working Paper No. 2015-4, February 2015. (This paper has been accepted for publication in <em> Emerging Markets Trade and Finance</em>.)
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper examines past evidence of prolonged periods of foreign exchange reserves accumulation in the Asia-Pacific region. Several proxies for this unobserved variable are considered, including a newly proposed one based on a factor model. We focus on identifying periods of prolonged interventions and identify its key macro-financial determinants. Two broad conclusions emerge from the stylized facts and the econometric evidence. First, the best protection against costly reserves accumulation is a more flexible exchange rate. Second, the necessity to accumulate reserves as a bulwark against goods price inflation is misplaced. Instead, there is a strong link between asset price movements and the likelihood of accumulating foreign exchange reserves that are costly. Policy implications are also drawn.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>	
+						
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Siklos, P.L. and B Lavender.    <a href="public/papers/LCERPA_2015_3.pdf" target="_blank"> The credit cycle and the business cycle in Canada and the U.S.: Two solitudes?</a> 
+				    LCERPA Working Paper No. 2015-3, February 2015. (This paper has been accepted for publication in <em>Canadian Public Policy</em>.)
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Recent events highlight the importance of understanding the relationship between credit availability and real economic activity. This paper estimates macroeconomic models for Canada to investigate the relationship between changes in non-price lending standards, business loans and output. We ask whether macroeconomic and financial market conditions in the U.S. affect Canadian macroeconomic and financial conditions. The answer seems to be less so than previous evidence suggests. Real time data are also found to have a significant impact on the results. The U.S. and Canada may indeed be likened to ‘two solitudes’ insofar as the impact of credit conditions is concerned. Differences in the quality of banking standards and supervision of financial institutions, as well differences in the effectiveness of monetary policies in the two countries may partially explain the results.  
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Claus, E., and M. Dungey. <a href="public/papers/LCERPA_2015_2.pdf" target="_blank"> Can monetary policy surprise the market? </a>
+					LCERPA Working Paper No. 2015-2, January 2015. (This paper has also been published in the CAMA's working paper series.)	
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper extracts measures of monetary policy surprises for Australia, Canada and the United States using a latent factor framework.
+                        We distinguish monetary policy surprises which occur when central banks
+                        report new assessments of the economy (or do not reinforce changes expected by market assessments) from those when policy makers appear to
+                        change their preferences. Changing policy preferences are evident in all
+                        jurisdictions, particularly during periods of stress. No-change policy announcements have distinctly differing impacts across the three countries;
+                        in Canada these have the same impact as policy changes, in Australia
+                        they are not discernibly different to a normal trading day and the US
+                        market lies between these scenarios. The revealed differences in size and
+                        type of the policy surprise outcomes for these operationally similar central
+                        banks suggests that the role of transparency policy is more subtle than
+                        previously appreciated.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					Boeringer, C.,  N. Rivers, T. Rutherford, and R. Wigle.    <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2386508##" target="_blank"> "Sharing the burden for climate change mitigation in the Canadian federation." </a>  LCERPA Working Paper No. 2015-1, January 2015 (posted with SSRN by ZenTra Centre for Transnational Studies in 2014).
+					<br> <em>This paper has been accepted for publication in the Canadian Journal of Economics.</em>
+						
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Dividing the burden for greenhouse gas abatement amongst the provinces has proven challenging in Canada, and is a major factor contributing to Canada’s poor historic performance on greenhouse gas abatement. As the country aims to achieve substantial cuts to emissions over the next decade and by mid-century, such burden sharing considerations are likely to be elevated in importance. This paper uses a detailed Canadian computable general equilibrium model to compare a number of archetypal rules for sharing the burden of a joint commitment amongst members for the case of greenhouse gas reductions in Canada. Because of the substantial heterogeneity amongst Canadian provinces, these different burden sharing rules imply significantly different relative abatement effort amongst provinces, and also significantly different welfare implications. We compare these archetypal burden sharing rules to existing provincial emission reduction commitments, and find that none of the standard burden sharing rules comes close to existing commitments. We argue that future efforts to share the burden of greenhouse gas abatement in Canada would be more successful if they were informed by a formal analysis such as the one presented here.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+                    
+                </div>
+                <div id="2014_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2014)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png">
+					B. McCaig and N. Pavcnik. 2014.   <a href="http://www.nber.org/papers/w20455"> Export Markets and Labor Allocation in a Low-Income Country </a> NBER Working Paper No. 20455.					
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We study the effects of an export shock on labor allocation across household businesses and employers in the formal enterprise sector in a low-income country, Vietnam. We find that workers reallocate from household businesses to employers in the formal enterprise sector, with greater reallocation in industries that experience larger declines in U.S. tariffs on Vietnamese exports due to the United States-Vietnam Bilateral Trade Agreement. The reallocation is greater for workers in more internationally integrated provinces and in younger cohorts. Labor productivity of household businesses is relatively low, so our findings suggest this reallocation increases aggregate labor productivity.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					B.J. Ruffle and O. Volij. 2014.  <a href="public/papers/LCERPA_2014_16.pdf"> "First-Mover Advantage in Best-Of-Series:
+					An Experiment Comparison of Role-Assignment Rules." </a> LCERPA Working Paper No. 2014-16, September 2014.
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Kingston (1976) and Anderson (1977) show that the probability that a given contestant wins a
+                        best-of-2k+1 series of asymmetric, zero-sum, binary-outcome games is, for a large class of assignment rules, 
+                        independent of which contestant is assigned the advantageous role in each component
+                        game. We design a laboratory experiment to test this hypothesis for four simple role-assignment
+                        rules. Despite significant differences in the frequency of equilibrium play across the four assignment rules, 
+                        our results show that the four rules are observationally equivalent at the series level:
+                        the fraction of series won by a given contestant and all other series outcomes do not differ across
+                        rules.
+                            </td>
+                        </tr>
+				    </table>
+				    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					M. Beck, N. Rivers, R. Wigle and H. Yonezawa. 2014.  <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2492766"> Carbon Tax and Revenue Recycling: Impacts on Households in British Columbia </a>
+					LCERPA Working Paper No. 2014-15, September 2014.	
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This study investigates the distributional implications of the revenue-neutral carbon tax policy 
+                        in British Columbia. We use a computable general equilibrium (CGE) model of the Canadian economy 
+                        and disaggregate households into deciles by annual income using data from a large household 
+                        expenditure survey. Using the model, we find that the existing BC carbon tax is highly progressive 
+                        even prior to consideration of the revenue recycling scheme, such that the negative impact of the 
+                        carbon tax on households with below-median income are smaller than that on households with 
+                        above-median income. We show that our finding is a result of welfare effects of a carbon tax 
+                        being determined primarily by the source of a households' income rather than by the destination of 
+                        its expenditures. Finally, we show that the existing revenue recycling scheme is also progressive. 
+                        Overall, the tax appears to be highly progressive.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					M. Beck and R. Wigle. 2014.  <a href="public/papers/LCERPA_2014_14.pdf"> "Carbon Revenue: Recycling
+					 versus Technological Incentives."</a>
+					LCERPA Working Paper No. 2014-14, January 2014.
+				    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This paper addresses a number of issues about the disposition of the funds
+                        generated by the Alberta Specified Gas Emitters Regulation (SGER), focusing 
+                        on the allocation of funds among three competing broad categories of
+                        expenditures: 1. revenue recycling via tax reductions, 2. support for developing
+                         new technologies, and 3. support for adoption of existing technologies.
+                        </td>
+                        </tr>
+                    </table>
+					<br>
+								
+					<p><img src="DESIGNS/laurier_leaf.png">
+					K. Pang and Y. Tang. 2014. "Estimating the International Spillover Effects of the U.S.
+					Economy: the Role of Capital Control and Exchange Rate Policy"
+					LCERPA Working Paper No. 2014-13, September 2014.
+					<br> <em>For a copy of the paper, please contact the author <a href="mailto: kpang@wlu.ca">kpang@wlu.ca</a> </em>
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Monetary policies and macroeconomic conditions of large economies often have
+                        spillover effects on small open economies (SOEs). Capital control and fixed exchange
+                        regimes are sometimes employed to mitigate the spillover effects. In this paper, we use
+                        two empirical approaches to study whether the effects of the U.S. monetary policy and
+                        output changes on SOEs are moderated by capital control and exchange rate policies.
+                        In the first approach, we estimate the responses of output and interest rates of SOEs
+                        to U.S. interest rate and output shocks in a VAR framework and relate the estimated
+                        responses to capital control and exchange rate regimes. We find evidence that capital
+                        controls and fixed exchange rate regimes reduce the spillover effects of such shocks
+                        to the SOEs. Secondly, we take a less-structured approach in which we estimate the
+                        partial correlation between output and interest rates of SOEs and those in the US in
+                        panel regression settings. The results are similar.
+                            </td>
+                        </tr>
+                    </table>
+					<br>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">
+					S. Legree, T. Schirle, and M. Skuterud. 2014. <a href="public/papers/LCERPA_2014_12.pdf"> "The Effect of Labour Relations Laws on Union Density Rates: Evidence from Canadian Provinces."</a> 
+					LCERPA Working Paper No. 2014-12, September 2014.
+                    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We provide evidence on the potential for reforms in labour law to reverse deunionization trends by relating an 
+                        index of the favorability to unions of Canadian provincial labour relations statutes to changes in provincial 
+                        union density rates between 1981 and 2012. The results suggest that shifting every province’s 2012 legal 
+                        regime to the most union-friendly possible could raise the national union density by up to 7 percentage points 
+                        in the long run. This effect appears driven by regulations related to the certification of new bargaining units, 
+                        the negotiation of first contracts and the recruitment of replacement workers. The effects of reform are largest 
+                        for women, particularly university-educated women employed as professionals in public services. 
+                        Overall, the results suggest a limited potential for labour relations reforms to address growing
+                         concerns about labour market inequality.
+                            </td>
+                        </tr>
+				    </table>	
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					L. McLeod and J.A. Johnson. 2014.  <a href="public/papers/LCERPA_2014_11.pdf"> "Changing the Schedule of Medical Benefits and 
+					the Effect on Primary Care Physician Billing: Quasi-Experimental Evidence from Alberta."</a> 
+					LCERPA Working Paper No. 2014-11, August 2014.
+				    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We exploit a quasi-experiment in the province of Alberta, Canada, to identify how changes
+                        in the schedule of medical benefits affected the provision of primary care services to patients
+                        with multiple co-morbidities. Specically, Alberta introduced a new fee code to compensate
+                        physicians for completing a comprehensive annual care plan (CACP) for qualifying patients.
+                        During the period of study, primary care physicians could practice in two settings: (i) solo
+                        practice; or (ii) primary care networks (i.e., team based care). This paper asks how the policy
+                        change affected physician-billing patterns and whether delivery structure affected physician-
+                        billing.
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;Data come from Alberta's administrative physician claims data, covering the full population
+                        of Alberta and all services provided by primary care physicians, for one year before and two
+                        years after the policy change. We employ a difference-in-differences methodology and implement
+                        a set of robustness checks to control for confounding from other contemporaneous changes that
+                        may have occurred in Alberta as well as unobserved physician heterogeneity.
+                        <br>  &nbsp;&nbsp;&nbsp;&nbsp;Our results suggest the new fee code became the sixth most billed code in its first year
+                        (totalling $17.9 million), but was billed by only a small proportion of physicians (roughly 2%
+                        of physicians accounted for 20% of total billings). The fee code was disproportionately billed
+                        by physicians in team-based care (PCNs), and increased the billing of other complementary fee
+                        codes by 5%-10% (or roughly $80 million). The results suggest the unintended consequences of
+                        a well-intentioned policy can be costly.
+                            </td>
+                        </tr>
+                    </table>
+				    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+                    W. Morrison and R. Oxoby. 2014. <a href="public/papers/LCERPA_2014_10_Morrison_Oxoby_Loss_Aversion.pdf">"Loss Aversion in the Laboratory."</a>
+                    LCERPA Working Paper No. 2014-10, June 2014.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        We report the results of a laboratory experiment testing for the existence of loss aversion
+                        in a standard risk aversion protocol (Holt and Laury, 2002). In our experiment,
+                        participants earn and retain money for a week before using it in an incentivized risk
+                        preference elicitation task. We find loss aversion, distinct from risk aversion, has a
+                        significant effect on behavior resulting in participants requiring higher compensation to
+                        bear risk.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">
+					S. Dhanjal and T. Schirle. 2014.
+					<a href="public/papers/LCERPA_2014_9_Dhanjal_Schirle.pdf">
+				    "Workforce Aging and the Labour Market Opportunities of Youth: Evidence from Canada."</a> LCERPA Working Paper No. 2014-9, June 2014.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        In this study, we investigate whether an aging workforce affects the job opportunities of youth.  Provincial data from the 1976-2013 Labour Force Surveys and a fixed-effects model is used to estimate the effect of the share of the adult male labour force that is aged 55 to 69 on the employment and unemployment rates of men aged 25 to 29.  We estimate effects on other labour market outcomes including wages and school enrolment, and other samples of younger men and women.  There is no evidence to suggest that a growing share of older workers negatively affects the decisions or outcomes of youth in the labour market.  To the contrary, there is weak evidence to suggest an aging population has a positive effect on the labour market outcomes of youth.
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.lcerpa.org/public/papers/LCERPA_2014_9_Dhanjal_Schirle.pdf" data-text="Workforce Aging and Labour Market Opportunites for Youth @tammyschirle @sundip_d" data-via="LCERPA_EconWLU" data-count="none" data-hashtags="cdnecon">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>	</td>
+                        </tr>
+				    </table>
+				    <br>
+						
+				    <p><img src="DESIGNS/laurier_leaf.png">  
+                    H. Huang, K. Pang, and Y. Tang. 2014. 
+                    <a href="public/papers/LCERPA_2014_8_Pang.pdf">"The Effects of Exchange Rates on Employment in Canada."</a>
+                     LCERPA Working Paper No. 2014-8, April 2014.  <br>
+                     <em> This paper has been accepted for publication in Canadian Public Policy.</em>
+                    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Under the flexible exchange rate regime, the Canadian economy is constantly affected
+                        by fluctuations in exchange rates. This paper focuses on the employment effect
+                        of the exchange rate in Canada. We find that appreciations of the Canadian dollar
+                        have signicant effects on employment in manufacturing industries; such effects
+                        are mostly associated with the export-weighted exchange rate and not the import-weighted
+                        exchange rate. Meanwhile, the exchange rate has little effect on jobs in
+                        nonmanufacturing industries. Because the manufacturing sector accounts for only
+                        about 10% of the employment in Canada, the overall employment effect of the exchange
+                        rate is small. In addition, we quantify the loss of manufacturing employment
+                        associated with a boom in the commodity market during which the Canadian dollar
+                        tends to appreciate. Our estimates suggest that when commodity prices increase by
+                        15.77% (one standard deviation of annual change in commodity price between 1994
+                        and 2010), Canada's manufacturing employment decreases by 0.8%, about 0.08% of
+                        the total employment.
+                        </td>
+                        </tr>
+                    </table>
+                    <br>
+						
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    P. Siklos and M. Neuenkirch 
+                    <a href="public/papers/LCERPA_14_7.pdf">"How Monetary Policy is Made: Two Canadian Tales"</a>
+                    LCERPA Working Paper No. 2014-7, March 2014.
+                    </p> 
+                    <table>
+
+                    </table>
+                    <br>
+
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    P. Siklos and B. Lavender. 
+                    <a href="public/papers/LCERPA_14_6.pdf">"THE CREDIT CYCLE AND THE BUSINESS CYCLE IN CANADA AND THE U.S.: TWO SOLITUDES? "</a>
+                    LCERPA Working Paper No. 2014-6.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Recent events highlight the importance of understanding the relationship between credit availability and real economic activity. This paper estimates macroeconomic models for Canada to investigate the relationship between changes in non-price lending standards, business loans and output. We allow for the possibility that macroeconomic and financial market conditions in the U.S. affect those in Canada. The responses to financial shocks are dissimilar in both countries. Real time data are also found to have a significant impact on the results. The U.S. and Canada may indeed be likened to 'two solitudes' insofar as the impact of credit conditions is concerned. Differences in the quality of banking standards and supervision of financial institutions, as well differences in the effectiveness of monetary policies in the two countries may partially explain the results.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    M. Neuenkirch and P. Siklos. 
+                     <a href="public/papers/LCERPA_14_7.pdf">"WHEN IS LIFT-OFF? EVALUATING FORWARD GUIDANCE FROM THE SHADOW."</a>
+                     LCERPA Working Paper No. 2014-5
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        Monetary policy decisions are typically taken after a committee has deliberated and voted on a proposal. However, there are well-known risks associated with committee-based decisions. In this paper we examine the record of the shadow Monetary Policy Council in Canada. Given the structure of the committee, how decision-making takes place, as well as the voting arrangements, the MPC does not face the same information cascades and group polarization risks faced by actual decision-makers in central bank monetary policy councils. We find a considerable diversity of opinion about the recommended future path of interest rates inside the MPC. Beginning with the explicit forward guidance provided by the Bank of Canada market determined forward rates diverge considerably from the recommendations implied by the MPC. There is little evidence that the Bank and the MPC coordinate their future views about the interest rate path. However, it is difficult to explain the basis on which median voter inside the MPC, as well as doves and hawks on the committee, change their views about future changes in policy rates. This implies that there remain challenges in understanding the evolution of future interest rate paths over time.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    Cindy Truong and Yan Wendy Wu. 
+                    <a href="public/papers/LCERPA_2014_4.pdf">"FEMALE BANK EXECUTIVES: IMPACT ON PERFORMANCE AND RISK TAKING SUBSTITUTES?"</a>
+                    LCERPA Working Paper No. 2014-4. 
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                            This paper studies the impact of female executives on the performance and risk taking of US banks. With a sample of US banks from 2002 to 2010, we find that the inclusion of female executives increases bank performance after addressing endogeneity and reverse causality issues. We also provide evidence that female executives decrease the risk taking of banks. These results suggest that there is added value to having female executives on the executive team. We also find that a more balanced gender ratio results in a greater impact on bank performance and risk taking. This supports the argument to increase gender diversity in executive level positions for females.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    Nicholas Corvari & Logan McLeod.
+                    <a href="public/papers/LCERPA_2014_3.pdf">"THE BURDEN OF PRESCRIPTION DRUGS ON SENIORS: REDUCING OUT-OF-POCKET EXPENDITURES THROUGH LOWER CO-PAYMENTS."</a>
+                    LCERPA Working Paper No. 2014-3.
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        The elderly are the most intensive users of healthcare including prescription drugs. Canadian provinces have responded with varying levels of support through senior drug plans that use cost-sharing measures such as co-payments in an attempt to find a sustainable balance between health objectives and budgetary constraints. While provincial co-payments have tended to migrate upwards over time resulting in a greater financial burden for seniors, Saskatchewan deviated from this trend in 2007 by capping its co-payment level. In an effort to provide evidence-based research to the ongoing policy discussion on best-practice approaches for this relatively vulnerable population group, this paper employs a Difference-in-Difference method within a Generalized Linear Model (GLM) to examine the impacts of the Saskatchewan policy change on out-of-pocket expenditure for senior household with a focus on impacts for differing segments of expenditure. The findings suggest the Saskatchewan policy change resulted in a decrease in out-of-pocket expenditures thereby lowering the financial burden for seniors. The results also show the expenditure savings largely accrued to seniors at the higher level of expenditure distribution and the policy change did not result in any significant change for households in the middle and lower quintiles.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    Wing Chan, Derek Wang, Terence Chong.
+                    "PRICE LIMIT AND STOCK VOLATILITY IN CHINA DURING FINANCIAL CRISES."
+                    LCERPA Working Paper No. 2014-2.
+                    <br> <em> Please contact the author at <a href="mailto: wchan@wlu.ca"> wchan@wlu.ca</a> for the paper.</em>
+
+                    </p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                         This paper explores the effects of price limits on the Chinese A-share stock markets during financial crises. A Logit regression model is estimated to investigate the characteristics of stocks that hit the price limits more frequently under economic turmoil. It is found that the price limit system increased volatility significantly, especially in the downward price movement. Moreover, price limit delays the efficient price discovery for upward and downward price movements. Finally, actively traded stocks with a higher positive correlation with the entire market in the property industry hit the price limits more frequently.
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <p><img src="DESIGNS/laurier_leaf.png">
+                    Christos Shiamptanis.
+                    <a href="public/papers/LCERPA_2014_1.pdf">"RISK ASSESSMENT UNDER A NONLINEAR FISCAL POLICY RULE" </a>
+                    LCERPA Working Paper No. 2014-1.<br>
+                    This paper has been accepted for publication in Economic Inquiry.
+                    </p>
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        In the aftermath of the recent debt crisis, many countries are implementing nonlinear fiscal policy rules, 
+                        whereby the government’s responsiveness to debt must strengthen at higher levels of debt. 
+                        This paper examines how a nonlinear fiscal policy rule affects the possibility of future insolvency in a small open economy. 
+                        We find that (1) the criteria for a nonlinear fiscal rule to eliminate explosive behavior should be tighter than the ones 
+                        proposed by Bohn (1998); (2) a country that adopts a nonlinear fiscal rule could substantially reduce the probability of a solvency crisis; 
+                        (3) a nonlinear fiscal rule allows a country to reduce the possibility of insolvency without large initial responsiveness.	</td>
+                        </tr>
+                    </table>
+                    <br>
+                    
+                </div>
+                <div id="2013_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2013)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> Linus Wilson, Yan Wendy Wu, Stephanie Prejean. 2013.  ARE THE BAILOUTS OF WALL STREET COMPLEMENTS OR SUBSTITUTES? LCERPA Working Paper No. 2013-16.
+					<br>  <em>This paper has been published in the Atlantic Economic Journal. Please contact the authors for a copy of the paper: <a href="mailto:wwu@wlu.ca">wwu@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Robert A Jones, Yan Wendy Wu. 2013. CREDIT EXPOSURE AND VALUATION OF REVOLVING CREDIT LINES. LCERPA Working Paper No. 2013-15.
+					<br>  <em> Please contact the authors for a copy of the paper: <a href="mailto:wwu@wlu.ca">wwu@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png">  Linus Wilson, Yan Wendy Wu. 2013. OVERPAID CEOS GOT FDIC DEBT GUARANTEES.  LCERPA Working Paper No. 2013-14.
+					<br>  <em> Please contact the authors for a copy of the paper: <a href="mailto:wwu@wlu.ca">wwu@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Theodore Panagiotidis, Gianluigi Pelloni. 2013.  <a href="/public/papers/LCERPA_2013_13.pdf">EMPLOYMENT REALLOCATION AND UNEMPLOYMENT REVISITED: A QUANTILE REGRESSION APPROACH.</a> LCERPA Working Paper No. 2013-13.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Emmanuel Dhyne, Jerzy Konieczny. 2013.  <a href="/public/papers/LCERPA_2013_12.pdf">AGGREGATION AND THE STAGGERING OF PRICE CHANGES.</a> LCERPA Working Paper No. 2013-12.
+					<em> This paper has been published in Economic Inquiry </em> </p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Chris Bidner, Ken Jackson. 2013 <a href="/public/papers/LCERPA_2013_11.pdf">TRUST AND VULNERABILITY.</a> LCERPA Working Paper No. 2013-11.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> William G. Morrison, Robert J. Oxoby. 2013. BEHAVIOURAL MECHANISMS TO ENCOURAGE SAVING: RESULTS OF TWO INTERTEMPORAL CHOICE EXPERIMENTS. LCERPA Working Paper No. 2013-10.
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:wmorrison@wlu.ca">wmorrison@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ke Pang, Pierre L. Siklos. 2013.  FINANCIAL FRICTIONS AND CREDIT SPREADS. LCERPA Working Paper No. 2013-9
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:kpang@wlu.ca">kpang@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Marisa Beck, Nicholas Rivers, Randall Wigle. 2013. <a href="/public/papers/LCERPA_2013_8.pdf">THE `OTHER' BENEFITS OF RENEWABLE ENERGY PROMOTION.</a> LCERPA Working Paper No. 2013-8.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Haifang Huang, Ke Pang, Yao Tang <a href="/public/papers/LCERPA_2013_7.pdf">THE EFFECTS OF THE EXCHANGE RATES ON EMPLOYMENT IN CANADA.</a> LCERPA Working Paper No. 2013-7.
+					<br><em> This paper has been accepted for publication in Canadian Public Policy. A 2014 version of the working paper is also available.</em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> M. Gallego, N. Schofield, K. McAlister, JS Jeon . 2013. THE VARIABLE CHOICE SET LOGIT MODEL APPLIED TO THE 2004 CANADIAN ELECTION. LCERPA Working Paper No. 2013-6.
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:mgallego@wlu.ca">mgallego@wlu.ca</a></em>
+					<br><em> This paper was published in Public Choice in 2014.</em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Hideki Ariizumi, Anindya Sen, Natasha De Sousa. 2013. EVALUATING THE RELATIONSHIP BETWEEN PAY AND PERFORMANCE: PANEL DATA EVIDENCE FROM ONTARIO UNIVERSITIES. LCERPA Working Paper No. 2013-5.
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:hariizumi@wlu.ca">hariizumi@wlu.ca</a></em>
+					<br><em> This paper has been published in Canadian Public Policy in 2014.</em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> William G. Morrison, Robert J. Oxoby. 2013. REFERENCE DEPENDENCE, DEFAULT BIAS, AND PROVISION OF TRAINING AND INFORMATION: AN INTERTEMPORAL CHOICE EXPERIMENT. LCERPA Working Paper No. 2013-4.
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:wmorrison@wlu.ca">wmorrison@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Hideki Ariizumi, Yaqin Hu, Tammy Schirle. 2013. STAND TOGETHER OR ALONE? FAMILY STRUCTURE AND THE BUSINESS CYCLE IN CANADA.  LCERPA Working Paper No. 2013-3.
+					<br><em> This paper has been accepted for publication in the Review of Economics of the Household.  Please contact the authors for a copy of the paper: <a href="mailto:hariizumi@wlu.ca">hariizumi@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Ke Pang, Yao Tang. 2013. VERTICAL TRADE, EXCHANGE RATE PASS-THROUGH AND EXCHANGE RATE REGIME.  LCERPA Working Paper No. 2013-2.
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:kpang@wlu.ca">kpang@wlu.ca</a></em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> M. Gallego, N. Schofield. 2013.  THE CONVERGENCE COEFFICIENT ACROSS POLITICAL REGIMES. LCERPA Working Paper No. 2013-1.
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:mgallego@wlu.ca">mgallego@wlu.ca</a></em>
+					</p>        
+                    
+                </div>
+                <div id="2012_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers(2012)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> names <a href="public/papers/LCERPA_201x_X.pdf"  target="_blank">title</a> info
+					<br><em> Please contact the authors for a copy of the paper: <a href="mailto:wmorrison@wlu.ca">wmorrison@wlu.ca</a></em>
+					</p>
+					
+					<p>
+                        <img src="DESIGNS/laurier_leaf.png"> <em>These pages have been changed recently.  If you are unable to find previously posted materials, please contact LCERPA at <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a>.</em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Schirle, T. "Elderly Income and Living Arrangements: Differences Across the Elderly Income Distribution in Canada. LCERPA Working Paper No. 2012-01. 
+					<br><em> Please contact the author for a copy of the paper: <a href="mailto:tschirle@wlu.ca">tschirle@wlu.ca</a></em>
+                    </p>
+                
+					<p> 
+                        <img src="DESIGNS/laurier_leaf.png"> Llavador, H., J.E. Roemer, J. Silvestre. <a href="public/papers/LCERPA_2012_03.pdf"  target="_blank">Sustainability in the presence of global warming: theory and empirics."</a> LCERPA Working Paper No. 2012-03.
+					</p>
+					
+					<p>
+                        <img src="DESIGNS/laurier_leaf.png"> DeCicca, P., and J. Smith. <a href="public/papers/LCERPA_2012_04.pdf"  target="_blank">Can higher taxes still improve birth outcomes? Evidence from recent large increases.</a> LCERPA Working Paper No. 2012-04.
+					</p>
+                    
+                </div>
+                <div id="2011_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers (2011)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> <em>These pages have been changed recently.  If you are unable to find previously posted materials, please contact LCERPA at <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a>.</em>
+					</p>
+						
+					<p><img src="DESIGNS/laurier_leaf.png">  Schirle, T. <a href="public/papers/LCERPA_2011_01.pdf"  target="_blank">"Income inequality among seniors in Canada: the role of women's labour market experience."</a> LCERPA Working Paper No. 2011-01.
+					</p>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png"> Burdekin, R.C.K., and P.L. Siklos. <a href="public/papers/LCERPA_2011_02.pdf"  target="_blank">"Enter the dragon: interactions between
+					Chinese, US, and Asia-Pacific equity markets, 1995-2010.</a> LCERPA Working Paper No. 2011-02.
+					</p>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png"> Siklos, P.L. <a href="public/papers/LCERPA_2011_03.pdf"  target="_blank">"Central Bank Transparency: Another Look."</a> LCERPA Working Paper No. 2011-03.
+					</p>
+						
+					<p><img src="DESIGNS/laurier_leaf.png">  Ziss, S. <a href="public/papers/LCERPA_2011_05.pdf"  target="_blank">"Equilibrium exclusive dealing in Oligopoly."</a> LCERPA Working Paper No. 2011-05.
+					</p>
+						
+					<p><img src="DESIGNS/laurier_leaf.png">  Essaji, A. and K. Fujiwara. <a href="public/papers/LCERPA_2011_06.pdf"  target="_blank">"Contracting institutions and product quality."</a> LCERPA Working Paper No. 2011-06.
+					</p>	
+						
+					<p><img src="DESIGNS/laurier_leaf.png">  Menner, M.  <a href="public/papers/LCERPA_2011_07.pdf"  target="_blank">"'Gesell' tax and efficiency of monetary exchange."</a> LCERPA Working Paper NO. 2011-07. (Conference Paper, Zero Bound and New Directions for Monetary Policy.)
+					</p>
+                    
+                </div>
+                <div id="2010_W" class="paper_tabcontent">
+                    <h3>LCER Working Papers (2010)</h3>
+                    
+					<p><img src="DESIGNS/laurier_leaf.png"> <em>These pages have been changed recently.  If you are unable to find previously posted materials, please contact LCERPA at <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a>.</em>
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Oxoby, R.J. and W.G. Morrison.  <a href="public/papers/LCERPA_2010-01.pdf"  target="_blank">"Loss aversion and intertemporal choice: a laboratory investigation."</a> LCERPA Working Paper No. 2010-01.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lu, C., T. Tai-Leung Chong, and Wing Hong Chan. <a href="public/papers/LCERPA_2010-02.pdf"  target="_blank">"Long memory in diamond market returns and volatility."</a> LCERPA Working Paper No. 2010-02.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Essaji, A, and C. Neill. <a href="public/papers/LCERPA_2010-03.pdf"  target="_blank">"Tax expenditures vs. budgetary expenditures for Canadian post-secondary education.</a> LCERPA Working Paper no. 2010-03.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Valdes, V. <a href="public/papers/LCERPA_2010-04.pdf"  target="_blank">Access to information, institutional capacity and inefficiency in the Mexican air transport sector.</a> LCERPA Working Paper No. 2010-04.
+					</p>
+					
+					<p><em>The Asia Pacific Gateway and Corridor Initiative Workshop Papers:</em>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Anderson, W.P. <a href="public/papers/APGCI_LCERPA 2010-05.pdf"  target="_blank">The Windsor-Detroit crossing: issues in P3s when infrastructure crosses borders."</a> LCERPA Working Paper No. 2010-05.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Blank, S.  <a href="public/papers/APGCI_LCERPA 2010-06.pdf"  target="_blank">"Freight trucks, mitigating GHG emissions and the danger of incrementalism."</a> LCERPA Working Paper NO. 2010-06.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Nguyen, T.T. and R.M. Wigle. <a href="public/papers/APGCI_LCERPA 2010-07.pdf"  target="_blank">"Sectoral and labour market impacts of border delays in Canada."</a> LCERPA Working Paper No. 2010-07.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Lawson, J. <a href="public/papers/APGCI_LCERPA 2010-08.pdf"  target="_blank">"Surface freight environmental footprints in the Ontario-Quebec continental corridor: focus on emissions."</a> LCERPA Working Paper No. 2010-08.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Chen, C. and F. Taham. <a href="public/papers/APGCI_LCERPA 2010-9.pdf"  target="_blank">"Reverse logistics networks with the gateway corridor components: a case of waste electrical and electronic equipment."</a> LCERPA Working Paper No. 2010-09.
+					</p>
+					
+					<p><img src="DESIGNS/laurier_leaf.png"> Haughton, M.  <a href="public/papers/APGCI_LCERPA 2010-10.pdf"  target="_blank">"Towards effective inter-organization collaboration in trans-border supply chains."</a> LCERPA Working Paper No. 2010-10.
+					</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+
+<div id="Commentaries" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_1">
+            <div class = "research_heading">
+                <h3>Commentaries</h3>
+                <p>LCERPA members offer expertise in a wide range of fields. On this page we provide information on our members' recent research and publications, including papers published as part of the LCERPA Working Paper Series.
+                <br><br> COMMENTARIES AND OTHER ANALYSIS:</p>
+                <button class ="paper_links" onclick ="openPage('Current_C', this, 'rgb(204,204,255)')" id ="defaultOpen">Current</button>
+                <button class ="paper_links" onclick ="openPage('2018_C', this, 'rgb(204,204,255)')">2018</button>
+                <button class ="paper_links" onclick ="openPage('2017_C', this, 'rgb(204,204,255)')">2017</button>
+                <button class ="paper_links" onclick ="openPage('2016_C', this, 'rgb(204,204,255)')">2016</button>
+                <button class ="paper_links" onclick ="openPage('2015_C', this, 'rgb(204,204,255)')">2015</button>
+                <button class ="paper_links" onclick ="openPage('2014_C', this, 'rgb(204,204,255)')">2014</button>
+        
+                <div id="Current_C" class="paper_tabcontent">
+                    <h3>LCER Commentaries(2019)</h3>
+                    <p>None listed below.</p>
+                </div>
+                <div id="2018_C" class="paper_tabcontent">
+                    <h3>LCER Commentaries(2018)</h3>
+                    
+                    <p><a id="C2018-1"><img src="DESIGNS/laurier_leaf.png"></a> Beck, M.,  and R. Wigle. <a href="public/papers/LCERPA_C2018_2.pdf" target="_blank">Notes Relevant to fit-rd Model Documentation</a> LCERPA Commentary No. 2018-2. 
+				    </p>
+							
+                    <p><a id="C2018-1"><img src="DESIGNS/laurier_leaf.png"></a> Beck, M., N. Rivers and R. Wigle. <a href="public/papers/LCERPA_C2018_1.pdf" target="_blank">fit-rd Model Documentation</a> LCERPA Commentary No. 2018-1. 
+                    </p>
+
+                </div>
+                <div id="2017_C" class="paper_tabcontent">
+                    <h3>LCER Commentaries(2017)</h3>
+						
+                    <p><a id="C2017-1"><img src="DESIGNS/laurier_leaf.png"></a> Wigle, Randall <a href="public/papers/LCERPA_C2017_1.pdf" target="_blank">Post-Brexit Trade in Light of the NAFTA Renegotiations.</a> LCERPA Commentary No. 1, November 2017. 
+                    Corresponds to the blog post with <a href="http://theconversation.com/a-quick-british-american-trade-deal-nafta-suggests-not-a-chance-87708"> The Conversation </a>
+                    </p>
+                    
+                </div>
+                <div id="2016_C" class="paper_tabcontent">
+                    <h3>LCER Commentaries(2016)</h3>
+                    
+					<p><a id="C2016-04"><img src="DESIGNS/laurier_leaf.png"></a> Ensing, D. 2016. <a href="http://www.lcerpa.org/public/papers/LCERPA_C2016_4.pdf" target="_blank">Flood damage: the hidden cost of climate change.</a> LCERPA Commentary No. 2016-4, May 2016. <em> Prepared for the Climate Choices Canada Conference, April 2016. </em>
+                    </p>
+
+                    <p><a id="C2016-03"><img src="DESIGNS/laurier_leaf.png"></a> Diallo, O. 2016. <a href="http://www.lcerpa.org/public/papers/LCERPA_C2016_3.pdf" target="_blank">Smart market-oriented regulations and the potential for unintended policy interactions in Canada.</a> LCERPA Commentary No. 2016-3, May 2016. <em> Prepared for the Climate Choices Canada Conference, April 2016. </em>
+                    </p>
+
+                    <p><a id="C2016-02"><img src="DESIGNS/laurier_leaf.png"></a> Arcila-Vasquez, A., A. Ferrer and T. Schirle. 2016 <a href="http://www.lcerpa.org/public/papers/LCERPA_C2016_2.pdf" target="_blank">The gender wage gap and returns to skills: Evidence from Ontario.</a> LCERPA Commentary No. 2016-2, April 2016.
+                    </p>
+
+                    <p><a id="C2016-01"><img src="DESIGNS/laurier_leaf.png"></a> Ensing, D. and T. Snoddon. 2016. <a href="http://www.lcerpa.org/public/papers/LCERPA_C2016_1.pdf" target="_blank">"Canada's Climate Policy: Promises, Expectations and Practicalities."</a> LCERPA Commentary No. 2016-1, February 2016.
+                    </p>
+                    
+                </div>
+                <div id="2015_C" class="paper_tabcontent">
+                    <h3>LCER Commentaries(2015)</h3>
+                   
+                    <p> <a id="C2015-1"><img src="DESIGNS/laurier_leaf.png"></a> Schirle, T. and E. Vickers. 2015 <a href="http://www.lcerpa.org/public/papers/LCERPA_C2015_1_Ontario_Gender_Wage_Gap.pdf" target="_blank">"The 2014 Gender Wage Gap in Ontario." </a> LCERPA Commentary No. 2015-1, March 2015.	</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        In this report we provide 2014 estimates of the male-female gap in average hourly wages for private sector Ontario workers aged 20-59, using the 2014 Labour Force Survey.  We decompose the wage gap to describe the extent to which the gap reflects gender differences in observable characteristics and the extent to which the gap is unexplained.
+                        Overall, the average wage of Ontario women in the private sector was 81.4% of the average wage of Ontario men in the private sector.  A large portion of the gap (44%) reflects gender difference in industry and occupation, but 56% remains unexplained.
+                            </td>
+                        </tr>
+
+                    </table>
+                    <br>
+					<p><a id="C2015-1b"><img src="DESIGNS/laurier_leaf.png"></a> Schirle, T. 2015. <a href="http://www.lcerpa.org/public/papers/LCERPA_C2015_1_Wage_Gap_Calculator.xlsx" target="_blank">"Wage Gap Calculator"</a> Excel file. The author suggests using this calculator after reading Schirle and Vickers (2015) LCERPA Commentary No. 2015-1.
+					</p> 
+                    <table>
+                        <tr>
+                        <td><em>Abstract</em>. 
+                        This calculator allows individuals working in Ontario's private sector to obtain a conditional prediction of the hourly wage for men and women given a set of personal and job characteristics.
+                        Less formally, individuals can obtain an estimate of the average hourly wage one might expect to see given an employee's attributes. </td>
+                        </tr>
+                    </table>		
+				    <br>
+					
+                </div>
+                <div id="2014_C" class="paper_tabcontent">
+                    <h3>LCER Commentaries(2014)</h3>
+                    
+						<p><img src="DESIGNS/laurier_leaf.png"> Shadpour, Ela. <a href="public/papers/LCERPA_C2014_2.pdf">"Safety Effects of Roundabouts"</a> LCERPA Commentary No. 2014-2, September 2014.
+						</p>
+						
+						<p><img src="DESIGNS/laurier_leaf.png"> Neill, C. <a href="public/papers/LCERPA_C2014_1.pdf">"Is Canada's Labour Force Participation Rate at its 
+						Lowest Level in Over a Decade, and Should We Worry About It?."</a> LCERPA Commentary No. 2014-1, August 2014.
+						</p>
+					
+						<p><img src="DESIGNS/laurier_leaf.png"><a href="public/notes/Municipal-Indicators-Aug2014.pdf">Municipal Labour Market Indicators, July 2014.</a> Compiled by C. Neill, Laurier Economics, August 15, 2014.
+						</p>             
+                </div>
+                
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+
+<div id="Undergraduate" class="tabcontent"> </div>
+
+<!--CONTACT TAB-->
+
+<div id="Director" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_director">
+            <div class="director_heading">
+                <h3>Director: <a class="title" href="http://www.wlu.ca/sbe/tschirle">DR. TAMMY SCHIRLE, PH.D.(UBC)</a></h3>
+                <img class="director_headshot" src="DESIGNS/Schirle-headshot.jpg" height="200">
+                <p>Tammy Schirle became the Director of LCERPA in 2014. Tammy is an Associate Professor in Laurier's Economics Department, having first joined the department in 2006. She is a labour economist with interests in public policy, retirement and aging, income inequality, and gender. She often studies policies affecting the Canadian labour market and has published in several academic journals including the <em>Journal of Labor Economics</em>, <em>Canadian Journal of Economics </em>, and <em>Canadian Public Policy</em>.</p>
+                <br>
+                
+            </div>
+            <div class="about_us"> 
+                <h3>WHAT WE DO</h3>
+                <p>LCERPA began in 2005 as an association of economists, based at the School of Business and Economics at Wilfrid Laurier University in Waterloo, Ontario, Canada.</p>
+                <p>LCER aims to support and promote high quality economic research.	In addition to promoting research within our academic networks, we work with professional economists, government bodies, and community stakeholders to advance our collective understanding of economic trends, policy applications, and other economic and social issues.</p>
+                <ul>
+                    <li> LCER publishes a working paper series that is indexed with RePec. These papers, policy briefs, and other research of our members, can be found on our <button class="tablinks" onclick= "openTab(event, 'Working Papers')"  href="#"> research pages </button>.</li>
+                    <li>   LCER supports events that promote quality economic research and communicate academic research to the broader community. Visit our<button class="tablinks" onclick= "openTab(event, 'Working Papers')"  href="#">news and events</button>pages for more information.</li>
+                    <li>  LCER supports the research efforts of our members and training of our students. Visit our<button class="tablinks" onclick= "openTab(event, 'Undergraduate')"  href="#">undergraduate research </button>page for more information.</li>
+                    <li>  LCER works with regional stakeholders to improve the quality and visibility of regional economic data. Visit the <a class="about_links" href="http://www.lcerpa.org/wrcerg">WRCERG</a> pages for more information. </li>
+
+                </ul>
+
+            </div>        
+            
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+
+</div>
+
+<div id="Media" class="tabcontent">
+     <div class="row2-space">
+        <div class="column2_director">
+            <div class ="media_heading">
+            <h3>MEDIA</h3>
+            <p>LCER members offer expertise in a wide range of topics. On this page we provide information on some of our members' expertise, availability for media commentary, and examples of past commentary. Please contact members directly, or contact LCER's Director (lcerpa@wlu.ca) for more information.</p>
+              
+            <div class="legend_object">    
+                
+            <div class="icon_legend_row">
+            <img class="social_icons" src="DESIGNS/checked@3x%20copy.png" height="25"> <h4 class="legend_info">Expertise</h4>
+            <img class="social_icons" src="DESIGNS/about@3x%20copy.png" height="25"> <h4 class="legend_info">Interviews</h4>
+            </div>
+                
+            <div class="icon_legend_row">
+            <img class="social_icons" src="DESIGNS/globe_earth@3x%20copy.png" height="25"> <h4 class="legend_info">Web Presence</h4>
+            <img class="social_icons" src="DESIGNS/news@3x%20copy.png" height="25"> <h4 class="legend_info">In The News</h4>
+            </div>
+                
+            <div class="icon_legend_row">
+            <img class="social_icons" src="DESIGNS/message@3x%20copy.png" height="25"> <h4 class="legend_info">Email</h4>
+            <img class="social_icons" src="DESIGNS/phone@3x%20copy.png" height="25"> <h4 class="legend_info">Ext #</h4>
+            </div>
+            
+            </div>
+            
+            <div class= "contacts">
+            
+                <div class="media_contact">
+                <h2>DAVID JOHNSON</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Education, Macroeconomics, International Finance</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Laurier Website</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">National Post: May 21, 2015<a class="media_news" href="http://news.nationalpost.com/full-comment/david-johnson-dont-let-standardized-tests-be-a-casualty-of-ontarios-negotiations-with-teachers" target="_blank">Full Comment: Dont't let standardized tests be a casualty of Ontario's negotiations with teacher</a> </h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:djohnson@wlu.ca">djohnson@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(2540)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>CHRISTINE NEILL</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Labour, Public Policy, Education, Crime</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Personal Website</h4>
+                        <img class="social_icons2" src="DESIGNS/twitter@3x%202.png" height="27"> <h4 class="contact_info">@chris_m_neill</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">Waterloo Record: April 4,2015<a class="media_news" href="http://www.therecord.com/news-story/5540633-from-smokestacks-to-robots-manufacturing-is-evolving-in-waterloo-region/" target="_blank">From smokestacks to robots, manufacturing is evolving in Waterloo Region </a>CBC News: January 28, 2014<a class="media_news" href="http://www.therecord.com/news-story/5540633-from-smokestacks-to-robots-manufacturing-is-evolving-in-waterloo-region/" target="_blank">Tax credits not the best way to help students</a></h4> 
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:cneill@wlu.ca">cneill@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(2469)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>BRIAN MCCAIG</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">International Trade, Economic Development</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Personal Website</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">New York Times: September 6, 2016 <a class="media_news" href="http://www.nytimes.com/2016/09/11/magazine/how-much-do-we-really-know-about-global-trades-impacts.html?_r=2" target="_blank">How Much Do We Really Know About Global Trade's Impacts? </a></h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:bmccaig@wlu.ca">bmccaig@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(4941)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>WILLIAM MORRISON</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Air Transportation, Behavioural Economics, Applied Microeconomics, Strategy</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Laurier Website</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">Yahoo News Canada: April 6, 2015 <a class="media_news" href="https://ca.news.yahoo.com/blogs/dailybrew/no-behaviour-checklist-for-catsa-for-now-183653112.html" target="_blank"> Leaked TSA behaviour screening checklist prompts questions about Canadian airport security</a></h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:wmorrison@wlu.ca">wmorrison@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(2570)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+            
+                <div class="media_contact">
+                <h2>BRADLEY RUFFLE</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Experimental Economics, Behavioral, Industrial Organization</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Laurier Website</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">Daily Mail: May 14, 2015 <a class="media_news" href="http://www.dailymail.co.uk/news/article-3080812/Why-attractive-women-job-applicants-shouldn-t-enclose-photo-CV-Staff-work-company-jealous-rivals-moving-territory.html#ixzz3cCKTzc3l" target="_blank"> Why attractive women job applicants should NOT enclose a photo with CV May 14, 2015.</a> The Economist: March 31,2012 <a class="media_news" href="http://www.economist.com/node/21551535" target="_blank">Don’t hate me because I’m beautiful</a></h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:bruffle@wlu.ca">bruffle@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(4470)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>TAMMY SCHIRLE</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Labour, Public Policy, Retirement, Gender, Pensions</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">IRPP Policy Options Blog<br>Personal Website</h4>
+                        <img class="social_icons2" src="DESIGNS/twitter@3x%202.png" height="27"> <h4 class="contact_info">@tammyschirle</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">CBC Radio One Kitchener: April 20, 2015 <a class="media_news"> Live interview with Craig Norris; Gender wage gaps</a> Globe and Mail quote: January 23, 2015 <a class="media_news" href="http://www.theglobeandmail.com/news/national/unemployment-stats-missing-in-areas-where-job-training-is-a-priority/article22598523/" target="_blank"> Ottawa failing to include First Nations in key employment data</a>Globe Debate commentary: October 14, 2014 <a class="media_news" href="http://www.theglobeandmail.com/globe-debate/why-is-ottawa-giving-me-a-child-care-benefit-i-dont-need/article21087799/" target="_blank">Why is Ottawa giving me a child care benefit I don’t need?</a>BNN: July 11, 2014 <a class="media_news" href="http://www.bnn.ca/Video/player.aspx?vid=396837" target="_blank"> Discussing ORPP</a></h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:tschirle@wlu.ca">tschirle@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(3849)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>CHRISTOS SHIAMPTANIS</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Fiscal Sustainability, Sovereign Default, Macroeconomics</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Personal Website</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">CTV Kitchener: December 2014 <a class="media_news" href="http://kitchener.ctvnews.ca/video?clipId=512340&binId=1.1147261&playlistPageNum=1" target="_blank"> Gas prices</a>BBC quote: June 2011 <a class="media_news" href="http://www.bbc.com/news/business-13793962" target="_blank">US housing market</a></h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:cshiamptanis@wlu.ca">cshiamptanis@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(2301)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>JUSTIN SMITH</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Economics of Education, Charitable Giving</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Personal Website</h4>
+                        <img class="social_icons2" src="DESIGNS/twitter@3x%202.png" height="27"> <h4 class="contact_info">@JustinSmithWLU</h4>
+                        <img class="social_icons2" src="DESIGNS/news@3x%20copy.png" height="27"> <h4 class="contact_info">Newstalk 770 Calgary: September, 2014 <a class="media_news">Live discussion of full-day kindergarten</a>Globe and Mail Op Ed: September, 2014 <a class="media_news" href="http://www.theglobeandmail.com/globe-debate/why-principals-may-be-the-key-to-your-childs-success-at-school/article20296502/" target="_blank">Why principals may be the key to your child’s success</a>Canadian Family Magazine, Interview about kindergarten redshirting: March, 2014 <a class="media_news" href="http://www.canadianfamily.ca/kids/toddler-and-preschool/academic-redshirting-should-you-hold-your-child-back-a-year/" target="_blank"> Academic redshirting: should you hold your child back a year?</a>CTV Kitchener: September, 2013 <a class="media_news"> Live interview about Bill 115</a>CBC Radio Manitoba: January, 2010 <a class="media_news">Live interview about month of birth and education outcomes</a></h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:jusmith@wlu.ca">jusmith@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(4554)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="media_contact">
+                <h2>STEFFEN ZISS</h2>
+                <div class="icon_group">
+                    <div class="group_row">
+                        <img class="social_icons2" src="DESIGNS/checked@3x%20copy.png" height="27"> <h4 class="contact_info">Industrial Organization, Mergers, Vertical Restraints and Contracting</h4>
+                        <img class="social_icons2" src="DESIGNS/about@3x%20copy.png" height="27"> <h4 class="contact_info">Print, Radio, TV</h4>
+                        <img class="social_icons2" src="DESIGNS/globe_earth@3x%20copy.png" height="27"> <h4 class="contact_info">Laurier Website</h4>
+                        <img class="social_icons2" src="DESIGNS/message@3x%20copy.png" height="27"> <h4 class="contact_info"><a href="mailto:sziss@wlu.ca">sziss@wlu.ca</a></h4>
+                        <img class="social_icons2" src="DESIGNS/phone@3x%20copy.png" height="27"> <h4 class="contact_info">519-884-0710 ext(2776)</h4>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    
+</div>
+
+<div id="For Members" class="tabcontent">
+    <div class="row2-space">
+        <div class="column2_members">
+            <div class="members_heading">
+                <h3>Information for Our Members</h3>
+                <p>This page provides information for LCERPA's members, including forms. </p>
+                    
+                <ul>
+                    <li>Members may apply for research-related funding. Find the application form <a href="DESIGNS/LCERPA-Funding-Request-Form.docx">here</a> (Word document).</li>
+
+                    <li>Members submitting working papers should include JEL codes. These will be indexed with RePEC.</li>
+
+                    <li>Questions and suggestions should be sent to the Director at <a href="mailto:lcerpa@wlu.ca">lcerpa@wlu.ca</a></li>
+                
+                </ul>
+                
+            </div>    
+        </div>
+        <div class="column2_2">
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="641" data-theme="dark" data-link-color="#981CEB" href="https://twitter.com/LCERPA_EconWLU?ref_src=twsrc%5Etfw">Tweets by LCERPA_EconWLU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+    
+<!--JavaScript Begins-->
+    
+<script> 
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            for (i = 0; i < dropdown.length; i++){
+                dropdown[i].addEventListener("click", function(){
+                  this.classList.toggle("collapse");
+                  var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }   
+                    
+                });
+            }
+
+            $(document).click(function(){
+                $(".dropdown-btn").hide();
+            });
+
+</script>
+    
+<script> 
+        var dropdown = document.getElementsByClassName("dropdown-btn-ne");
+            var i;
+            for (i = 0; i < dropdown.length; i++){
+                dropdown[i].addEventListener("click", function(){
+                  this.classList.toggle("collapse");
+                  var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }   
+                    
+                });
+            }
+
+            $(document).click(function(){
+                $(".dropdown-btn-ne").hide();
+            });
+
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(carousel, 3000);
+}
+    
+//var slideIndex= 0;
+//carousel(slideIndex);
+//    
+//function currentSlide(n) {
+//  carousel(slideIndex = n);
+//}
+//
+//function carousel(n) {
+//  var i;
+//  var slides = document.getElementsByClassName("mySlides");
+//  var dots = document.getElementsByClassName("dot");
+//  if (n > slides.length) {slideIndex = 1}   
+//  if (n < 1) {slideIndex = sslides.length}
+//  for (i = 0; i < slides.length; i++) {
+//    slides[i].style.display = "none";  
+//  }
+//  for (i = 0; i < dots.length; i++) {
+//    dots[i].className = dots[i].className.replace(" active", "");
+//  }
+//  slideIndex++;
+//  if (slideIndex > slides.length) {slideIndex = 1}    
+//  slides[slideIndex-1].style.display = "block";  
+//  setTimeout(carousel, 2000); // Change image every 2 seconds
+//}
+    
+</script>
+<script>
+  function openTab(evt, TabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(TabName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defaultOpen").click();
+</script>
+    
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("paper_tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("paper_links");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
